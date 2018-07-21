@@ -13,7 +13,7 @@ button {
   font-family: 'Cuprum', sans-serif; 
   color: #fff;
   font-size: 17px;
-  line-height: 37px;
+  line-height: 41px;
 }
 .header__item-logo {
   padding-left: 241px;
@@ -31,12 +31,13 @@ button {
 }
 .header__item-search {
   padding-left: 480px;
-  padding-top: 4px;
   position: absolute;
 }
-.icon__search_grey {
+.icon__awsome_grey {
   color: #6a7180;
-  width: 24px;
+}
+.icon_search {
+  padding-right: 5px;
   font-size: 1.2em;
 }
 .header__item_right {
@@ -44,21 +45,16 @@ button {
   float: right;
 }
 .header__item-bookmarks {
-  padding-right: 45px;
-  padding-top: 3px;
+  padding-right: 44px;
 }
-.icon__bookmarks_grey {
-  color: #6a7180;
-  width: 23px;
-  font-size: 1em;
+.icon_bookmarks {
+  padding-right: 9px;
 }
 .header__item-backet {
   padding-right: 31px;
-  padding-top: 3px;
 }
-.icon__backet_grey {
-  color: #6a7180;
-  width: 28px;
+.icon_backet {
+ padding-right: 10px;
 }
 .header__item-checkout {
   padding-right: 243px;
