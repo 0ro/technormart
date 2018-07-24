@@ -1,70 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{ 
+  text-align: center;
+} 
 button {
- border: 0;
+    vertical-align: 
+}
+.top {
+  background-color: #293449;
+  max-height: 42px;
 }
 .header {
-  height: 42px;
-  background-color: #293449;
-  min-width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
+  width: 960px;
+  min-height: 42px;
+  max-height: 43px;
+  margin:0 auto;
+  display: inline-block;
 }
 .header__item {
   font-family: 'Cuprum', sans-serif; 
   color: #fff;
   font-size: 17px;
-  line-height: 41px;
+  vertical-align: middle;
+  display: inline-block;
 }
 .header__item-logo {
-  padding-left: 241px;
-  position: absolute;
-  height: 42px;
-  width: 222px;
-  font-size: 24px;
+  font-size: 23px;
+  line-height: 42px;
+  width: 220px;
+  padding-left: 10px;
+  float: left;
 }
 .logo {
   background-color: #ee3643;
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.8em;
   border-bottom: 5px #b52933 solid;
 }
 .header__item-search {
-  padding-left: 480px;
-  position: absolute;
+  padding-left: 16px;
+  padding-right: 194px;
+  float: left;
+  line-height: 42px;
+
 }
 .icon__awsome_grey {
   color: #6a7180;
+  display: inline-block;
 }
 .icon_search {
   padding-right: 5px;
   font-size: 1.2em;
+  display: inline-block;
+}
+.header__item_left{
+  display: inline-block;
 }
 .header__item_right {
-  display: flex;
-  float: right;
+ float: right;
+ display: inline-block;
 }
 .header__item-bookmarks {
-  padding-right: 44px;
+  padding-right: 42px;
+  line-height: 42px;
+
 }
 .icon_bookmarks {
   padding-right: 9px;
+  display: inline-block;
 }
 .header__item-backet {
-  padding-right: 31px;
+  padding-right: 26px;
+  line-height: 42px;
 }
 .icon_backet {
- padding-right: 10px;
+ padding-right: 9px;
+ display: inline-block;
 }
 .header__item-checkout {
-  padding-right: 243px;
+float: right;
 }
 .checkout__button_green {
-  height: 42px;
-  width: 149px;
   background-color: #63a63e;
   font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
-  border-color: #63a63e; 
+  padding-top: 14px;
+  padding-bottom: 9px;
+  padding-left: 26px;
+  padding-right: 26px;  
 }
