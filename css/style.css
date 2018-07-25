@@ -6,17 +6,13 @@
 body{ 
   text-align: center;
 } 
-button {
-    vertical-align: 
-}
 .top {
   background-color: #293449;
   max-height: 42px;
 }
 .header {
   width: 960px;
-  min-height: 42px;
-  max-height: 43px;
+  max-height: 42px;
   margin:0 auto;
   display: inline-block;
 }
@@ -27,7 +23,7 @@ button {
   vertical-align: middle;
   display: inline-block;
 }
-.header__item-logo {
+.header__logo {
   font-size: 23px;
   line-height: 42px;
   width: 220px;
@@ -40,12 +36,11 @@ button {
   text-align: center;
   border-bottom: 5px #b52933 solid;
 }
-.header__item-search {
+.header__search {
   padding-left: 16px;
   padding-right: 194px;
   float: left;
   line-height: 42px;
-
 }
 .icon__awsome_grey {
   color: #6a7180;
@@ -56,40 +51,32 @@ button {
   font-size: 1.2em;
   display: inline-block;
 }
-.header__item_left{
-  display: inline-block;
-}
-.header__item_right {
- float: right;
- display: inline-block;
-}
-.header__item-bookmarks {
+.header__bookmarks {
   padding-right: 42px;
   line-height: 42px;
-
 }
 .icon_bookmarks {
   padding-right: 9px;
   display: inline-block;
 }
-.header__item-backet {
+.header__backet {
   padding-right: 26px;
   line-height: 42px;
 }
 .icon_backet {
- padding-right: 9px;
- display: inline-block;
+  padding-right: 9px;
+  display: inline-block;
 }
-.header__item-checkout {
-float: right;
+.header__checkout {
+  float: right;
+  line-height: 41px;
+  padding-right: 5px;
 }
 .checkout__button_green {
   background-color: #63a63e;
   font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
-  padding-top: 14px;
-  padding-bottom: 9px;
-  padding-left: 26px;
-  padding-right: 26px;  
+  padding: 12px 26px 12px 23px;
+  text-decoration: none; 
 }
