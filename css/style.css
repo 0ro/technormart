@@ -9,9 +9,6 @@ body{
 a {
   text-decoration: none;
 }
-input[type="text"] {
-  color: #fff;
-}
 .top {
   background-color: #293449;
   max-height: 42px;
@@ -30,19 +27,19 @@ input[type="text"] {
   display: inline-block;
 }
 .header__logo {
-  font-size: 23px;
-  line-height: 42px;
-  padding: 0 57px 0 57px;
   margin-left: 11px;
   float: left;
   background-color: #ee3643;
-  border-bottom: 5px #b52933 solid;
 }
 .logo {
   background-color: #ee3643;
   text-transform: uppercase;
   text-align: center;
   color: #fff;
+  padding: 8px 57px 8px 57px;
+  font-size: 23px;
+  line-height: 40px;
+  border-bottom: 5px #b52933 solid;
 }
 .header__search {
   float: left;
@@ -81,8 +78,7 @@ input[type="text"] {
   display: inline-block;
 }
 .header__checkout {
-  float: right;
-  line-height: 41px;
+  float: right; 
 }
 .checkout__button_green {
   background-color: #63a63e;
@@ -90,5 +86,6 @@ input[type="text"] {
   font-size: 17px;
   color: #fff;
   padding: 12px 26px 12px 23px;
-  text-decoration: none; 
+  text-decoration: none;
+  line-height: 41px; 
 }
