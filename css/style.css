@@ -9,6 +9,9 @@ body{
 a {
   text-decoration: none;
 }
+input[type="text"] {
+  color: #fff;
+}
 .top {
   background-color: #293449;
   max-height: 42px;
@@ -46,12 +49,11 @@ a {
   line-height: 42px;
   padding-left: 17px;
 }
-.search {
+.form-control {
   background-color: #293449;
   color:#FFFFFF !important;
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
-  font: 100 18px #fff;
 }
 .icon__awsome_grey {
   color: #6a7180;
