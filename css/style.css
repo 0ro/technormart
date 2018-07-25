@@ -39,14 +39,19 @@ a {
   background-color: #ee3643;
   text-transform: uppercase;
   text-align: center;
-  
   color: #fff;
 }
 .header__search {
-  padding-left: 16px;
-  padding-right: 194px;
   float: left;
   line-height: 42px;
+  padding-left: 17px;
+}
+.search {
+  background-color: #293449;
+  color:#FFFFFF !important;
+  font-family: 'Cuprum', sans-serif; 
+  font-size: 18px;
+  font: 100 18px #fff;
 }
 .icon__awsome_grey {
   color: #6a7180;
@@ -58,25 +63,24 @@ a {
   display: inline-block;
 }
 .header__bookmarks {
-  padding-right: 42px;
   line-height: 42px;
+  padding-left: 56px;
 }
 .icon_bookmarks {
   padding-right: 9px;
   display: inline-block;
 }
-.header__backet {
-  padding-right: 26px;
+.header__basket {
   line-height: 42px;
+  margin-left: 40px;
 }
-.icon_backet {
+.icon_basket {
   padding-right: 9px;
   display: inline-block;
 }
 .header__checkout {
   float: right;
   line-height: 41px;
-  padding-right: 5px;
 }
 .checkout__button_green {
   background-color: #63a63e;
