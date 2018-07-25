@@ -29,8 +29,7 @@ a {
 .header__logo {
   font-size: 23px;
   line-height: 42px;
-  padding-left: 57px;
-  padding-right: 57px;
+  padding: 0 57px 0 57px;
   margin-left: 11px;
   float: left;
   background-color: #ee3643;
