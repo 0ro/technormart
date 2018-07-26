@@ -1,35 +1,32 @@
-* {
+ body {
   margin: 0;
   padding: 0;
-  border: 0;
-}
-body{ 
-  text-align: center;
-} 
-a {
+  font-family: 'Cuprum', sans-serif;
+ }
+ a {
   text-decoration: none;
 }
-.top {
+.header {
   background-color: #293449;
   max-height: 42px;
+  text-align: center;
 }
-.header {
-  width: 960px;
+.header__top {
+  width: 940px;
   max-height: 42px;
   margin:0 auto;
   display: inline-block;
+  text-align: justify;
 }
 .header__item {
-  font-family: 'Cuprum', sans-serif; 
   color: #fff;
   font-size: 17px;
-  vertical-align: middle;
   display: inline-block;
 }
 .header__logo {
-  margin-left: 11px;
-  float: left;
-  background-color: #ee3643;
+  margin-left: 9px;
+  
+  /*background-color: #ee3643;*/
 }
 .logo {
   background-color: #ee3643;
@@ -42,15 +39,15 @@ a {
   border-bottom: 5px #b52933 solid;
 }
 .header__search {
-  float: left;
   line-height: 42px;
-  padding-left: 17px;
+  padding-left: 11px;
 }
 .form-control {
   background-color: #293449;
   color:#FFFFFF !important;
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
+  border: 0;
 }
 .icon__awsome_grey {
   color: #6a7180;
@@ -63,7 +60,9 @@ a {
 }
 .header__bookmarks {
   line-height: 42px;
-  padding-left: 56px;
+  margin-left: 48px;
+  /*padding-left: 89px;*/
+  /*padding-left: 56px;*/
 }
 .icon_bookmarks {
   padding-right: 9px;
@@ -78,14 +77,14 @@ a {
   display: inline-block;
 }
 .header__checkout {
-  float: right; 
+  padding-left: 13px;
 }
 .checkout__button_green {
   background-color: #63a63e;
   font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
-  padding: 12px 26px 12px 23px;
+  padding: 12px 26px;
   text-decoration: none;
-  line-height: 41px; 
+  max-height: 41px; 
 }
