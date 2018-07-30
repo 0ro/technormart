@@ -1,4 +1,6 @@
  body {
+  margin: 0;
+  padding: 0;
   font-family: 'Cuprum', sans-serif;
  }
  a {
@@ -14,9 +16,7 @@ a:active {
 /*------HEADER------*/
 .header {
   background-color: #293449;
-  max-height: 42px;
   text-align: center;
-  margin: -8px -8px 0 -8px;
 }
 .header__top {
   width: 940px;
@@ -29,10 +29,6 @@ a:active {
   display: inline-block;
   max-height: 42px;
   margin: 0 -16px 0 -4px;
-}
-.top__items:hover {
-  background-color: #212a3a;
-  cursor: default;
 }
 /*------HEADER ITEMS------*/
 .header__item {
@@ -62,17 +58,19 @@ a:active {
 .header__search {
   line-height: 42px;
   padding-left: 20px;
-  margin-left: -5px;
-}
-.header__search:focus {
-  cursor: default;
+  margin-left: -20px;
+  position: relative;
 }
 .form-control {
   background-color: #293449;
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
   border: 0;
-  padding: 11px 70px 10px 0px;
+  width: 220px;
+  padding: 11px 6px 10px 43px;
+}
+.form-control:hover {
+  background-color: #212a3a;
 }
 .form-control:focus {
   background-color: #fff;
@@ -84,9 +82,9 @@ a:active {
 }
 /*------ICON SEARCH------*/
 .icon_search {
-  padding-right: 5px;
   font-size: 1.2em;
-  display: inline-block;
+  position: absolute;
+  left: 35px;
 }
 /*------BOOKMARKS------*/
 .header__bookmarks {
@@ -95,8 +93,17 @@ a:active {
 .bookmarks {
   padding: 11px 18px;
 }
+.bookmarks:hover {
+  background-color: #212a3a;
+}
+.bookmarks:hover .fa-bookmark {
+  color: #fff;
+}
 .bookmarks:active {
   background-color: #161d29;
+}
+.bookmarks:active .icon__awsome_grey{
+  color: #8b8e94;
 }
 /*------ICON BOOKMARKS------*/
 .icon_bookmarks {
@@ -107,8 +114,17 @@ a:active {
 .basket {
   padding: 11px 18px;
 }
+.basket:hover {
+  background-color: #212a3a;
+}
+.basket:hover .fa-shopping-cart {
+  color: #fff;
+}
 .basket:active {
   background-color: #161d29;
+}
+.basket:active .icon__awsome_grey {
+  color: #8b8e94;
 }
 /*------ICON BASKET------*/
 .icon_basket {
