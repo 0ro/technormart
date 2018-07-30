@@ -27,7 +27,7 @@ a:active {
 }
 .top__items {
   display: inline-block;
-  max-height: 42px;
+  max-height: 43px;
   margin: 0 -16px 0 -4px;
 }
 /*------HEADER ITEMS------*/
@@ -42,7 +42,7 @@ a:active {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  padding: 8px 57px;
+  padding: 9px 57px;
   font-size: 23px;
   line-height: 40px;
   border-bottom: 5px #b52933 solid;
@@ -67,7 +67,7 @@ a:active {
   font-size: 18px;
   border: 0;
   width: 220px;
-  padding: 11px 6px 10px 43px;
+  padding: 11px 6px 11px 43px;
 }
 .form-control:hover {
   background-color: #212a3a;
@@ -140,7 +140,7 @@ a:active {
   font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
-  padding: 12px 26px 11px;
+  padding: 12px 26px;
   text-decoration: none;
 }
 .checkout__button_green:hover {
