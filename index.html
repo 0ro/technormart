@@ -18,31 +18,34 @@
           техномарт
         </a>
       </div>
-      <!-- search -->
-      <div class="header__item header__search">
-        <div class="icon_search">
-          <i class="fas fa-search icon__awsome icon__awsome_grey">
-          </i>
-        </div>
-        <input type="text" class="form-control" placeholder=" Поиск ">
-      </div>
-      <!-- bookmarks -->
-      <div class="header__item header__bookmarks">
-        <div class="bookmarks">
-          <div class="icon_bookmarks">
-            <i class="fas fa-bookmark icon__awsome icon__awsome_grey"></i></div>
-            Закладки: <span>0</span>
+      <div class="top__items">
+        <!-- search -->
+        <a class="header__item header__search" href="#">
+          <div class="icon_search">
+            <i class="fas fa-search icon__awsome icon__awsome_grey">
+            </i>
           </div>
+        </a>
+        <input type="text" class="form-control" placeholder=" Поиск ">
+        <!-- bookmarks -->
+        <div class="header__item header__bookmarks">
+          <a class="bookmarks" href="#">
+            <span class="icon_bookmarks">
+              <i class="fas fa-bookmark icon__awsome icon__awsome_grey"></i>
+            </span>
+            Закладки: <span>0</span>
+          </a>
         </div>
         <!-- backet -->
         <div class="header__item header__basket">
-          <div class="basket">
+          <a class="basket" href="#">
             <div class="icon_basket">
               <i class="fas fa-shopping-cart icon__awsome icon__awsome_grey"></i>
             </div>
               Корзина: <span>0</span>
-          </div>
+          </a>
         </div>
+      </div>
         <!-- checkout -->
         <div class="header__item header__checkout">
           <a class="checkout__button checkout__button_green" href="#">Оформить заказ</a>
