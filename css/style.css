@@ -75,7 +75,7 @@ a:active {
 .form-control:focus {
   background-color: #fff;
 }
-.form-control:focus+.icon__awsome_grey {
+.form-control:focus+.icon__awsome_grey-search {
   color: red;
 }
 /*------ICONS------*/
@@ -84,11 +84,12 @@ a:active {
   display: inline-block;
 }
 /*------ICON SEARCH------*/
-.icon_search {
+.icon__awsome_grey-search {
   font-size: 1.2em;
+  color: #6a7180;
   position: absolute;
   left: 35px;
-  top: 3px;
+  top: 12px;
 }
 /*------BOOKMARKS------*/
 .header__bookmarks {
