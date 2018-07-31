@@ -75,6 +75,9 @@ a:active {
 .form-control:focus {
   background-color: #fff;
 }
+.form-control:focus+.icon__awsome_grey {
+  color: red;
+}
 /*------ICONS------*/
 .icon__awsome_grey {
   color: #6a7180;
@@ -85,6 +88,7 @@ a:active {
   font-size: 1.2em;
   position: absolute;
   left: 35px;
+  top: 3px;
 }
 /*------BOOKMARKS------*/
 .header__bookmarks {
