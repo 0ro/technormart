@@ -62,11 +62,9 @@ a:active {
   position: relative;
 }
 .form-control {
-  
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
   border: 0;
-  
   padding: 11px 36px;
 }
 .form-control_search {
