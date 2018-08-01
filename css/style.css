@@ -22,19 +22,14 @@ a:active {
   width: 940px;
   max-height: 43px;
   margin:0 auto;
-  display: inline-block;
+  display: flex;
   text-align: center;
-}
-.top__items {
-  display: inline-block;
-  max-height: 43px;
-  margin: 0 -16px 0 -4px;
 }
 /*------HEADER ITEMS------*/
 .header__item {
   color: #fff;
   font-size: 17px;
-  display: inline-block;
+  display: flex;
 }
 /*------LOGO------*/
 .logo {
@@ -42,10 +37,14 @@ a:active {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  padding: 9px 57px;
+  padding: 3px 57px;
   font-size: 23px;
   line-height: 40px;
   border-bottom: 5px #b52933 solid;
+}
+.header__logo {
+  max-width: 220px;
+  min-height: 47px;
 }
 .logo:hover {
   background-color: #ca2c37;
@@ -83,7 +82,6 @@ a:active {
 /*------ICONS------*/
 .icon__awsome_grey {
   color: #6a7180;
-  display: inline-block;
 }
 /*------ICON SEARCH------*/
 .icon__awsome_grey-search {
@@ -98,7 +96,7 @@ a:active {
   line-height: 43px;
 }
 .bookmarks {
-  padding: 11px 18px;
+  padding: 0 20px;
 }
 .bookmarks:hover {
   background-color: #212a3a;
@@ -115,11 +113,13 @@ a:active {
 /*------ICON BOOKMARKS------*/
 .icon_bookmarks {
   padding-right: 9px;
-  display: inline-block;
 }
 /*------BASKET------*/
 .basket {
-  padding: 11px 18px;
+  padding: 0 20px;
+}
+.header__basket {
+  line-height: 42px;
 }
 .basket:hover {
   background-color: #212a3a;
@@ -140,7 +140,6 @@ a:active {
 }
 /*------CHESKOUT------*/
 .header__checkout {
-  margin-left: 13px;
 }
 .checkout__button_green {
   background-color: #63a63e;
