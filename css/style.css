@@ -62,12 +62,16 @@ a:active {
   position: relative;
 }
 .form-control {
-  background-color: #293449;
+  
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
   border: 0;
-  width: 220px;
-  padding: 11px 6px 11px 43px;
+  
+  padding: 11px 36px;
+}
+.form-control_search {
+  background-color: #293449;
+  width: 197px;
 }
 .form-control:hover {
   background-color: #212a3a;
@@ -138,7 +142,7 @@ a:active {
 }
 /*------CHESKOUT------*/
 .header__checkout {
-  padding-left: 13px;
+  margin-left: 13px;
 }
 .checkout__button_green {
   background-color: #63a63e;
