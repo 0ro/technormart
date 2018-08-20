@@ -20,16 +20,16 @@ a:active {
 }
 .header__top {
   width: 940px;
-  max-height: 43px;
+  max-height: 42px;
   margin:0 auto;
   display: flex;
   text-align: center;
+  height: 100%;
 }
 /*------HEADER ITEMS------*/
 .header__item {
   color: #fff;
   font-size: 17px;
-  display: flex;
 }
 /*------LOGO------*/
 .logo {
@@ -37,14 +37,13 @@ a:active {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  padding: 3px 57px;
+  padding: 9px 57px;
   font-size: 23px;
   line-height: 40px;
   border-bottom: 5px #b52933 solid;
 }
 .header__logo {
   max-width: 220px;
-  min-height: 47px;
 }
 .logo:hover {
   background-color: #ca2c37;
@@ -56,27 +55,28 @@ a:active {
 /*------SEARCH------*/
 .header__search {
   line-height: 42px;
-  padding-left: 20px;
-  margin-left: -20px;
   position: relative;
+  /*display: inline-block;*/
+  max-height: 40px;
 }
 .form-control {
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
   border: 0;
-  padding: 11px 36px;
+  padding-left: 45px;
 }
 .form-control_search {
   background-color: #293449;
   width: 197px;
+  height: 100%;
 }
-.form-control:hover {
+.form-control_search:hover {
   background-color: #212a3a;
 }
-.form-control:focus {
+.form-control_search:focus {
   background-color: #fff;
 }
-.form-control:focus+.icon__awsome_grey-search {
+.form-control_search:focus+.icon__awsome_grey-search {
   color: red;
 }
 /*------ICONS------*/
@@ -88,15 +88,17 @@ a:active {
   font-size: 1.2em;
   color: #6a7180;
   position: absolute;
-  left: 35px;
+  left: 20px;
   top: 12px;
 }
 /*------BOOKMARKS------*/
 .header__bookmarks {
   line-height: 43px;
+  /*height: 100%;*/
+  /*position: relative;*/
 }
 .bookmarks {
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .bookmarks:hover {
   background-color: #212a3a;
@@ -116,7 +118,7 @@ a:active {
 }
 /*------BASKET------*/
 .basket {
-  padding: 0 20px;
+  padding: 10px 20px;
 }
 .header__basket {
   line-height: 42px;
@@ -140,14 +142,20 @@ a:active {
 }
 /*------CHESKOUT------*/
 .header__checkout {
-}
+  display: inline-block;
+  line-height: 42px;
+  min-height: 40px;
+  position: relative;
+  }
 .checkout__button_green {
   background-color: #63a63e;
   font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
-  padding: 12px 26px;
+  padding: 0 26px;
   text-decoration: none;
+  height: 100%;
+  /*position: absolute;*/
 }
 .checkout__button_green:hover {
   background-color: #5fbb2d;
