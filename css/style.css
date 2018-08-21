@@ -24,7 +24,6 @@ a:active {
   margin:0 auto;
   display: flex;
   text-align: center;
-  height: 100%;
 }
 /*------HEADER ITEMS------*/
 .header__item {
@@ -56,19 +55,19 @@ a:active {
 .header__search {
   line-height: 42px;
   position: relative;
-  max-height: 40px;
 }
 .form-control {
   font-family: 'Cuprum', sans-serif; 
   font-size: 18px;
   border: 0;
-  padding-left: 45px;
 }
 .form-control_search {
   background-color: #293449;
   width: 197px;
-  display: inline;
-  height: 100%;
+  display: inline-block;
+  padding: 0 0 0 45px;
+  margin: 0;
+  min-height: 42px;
 }
 .form-control_search:hover {
   background-color: #212a3a;
@@ -94,7 +93,6 @@ a:active {
 /*------BOOKMARKS------*/
 .header__bookmarks {
   line-height: 43px;
-  max-height: 40px;
 }
 .bookmarks {
   padding: 0 20px;
@@ -122,7 +120,6 @@ a:active {
 /*------BASKET------*/
 .header__basket {
   line-height: 42px;
-  max-height: 40px;
 }
 .basket {
   padding: 0 20px;
@@ -151,11 +148,9 @@ a:active {
 /*------CHESKOUT------*/
 .header__checkout {
   line-height: 43px;
-  min-height: 40px;
 }
 .checkout__button_green {
   background-color: #63a63e;
-  font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
   padding: 0 26px;
