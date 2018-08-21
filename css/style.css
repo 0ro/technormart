@@ -1,9 +1,9 @@
- body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', sans-serif;
- }
- a {
+}
+a {
   text-decoration: none;
   color: #fff;
 }
@@ -56,7 +56,6 @@ a:active {
 .header__search {
   line-height: 42px;
   position: relative;
-  /*display: inline-block;*/
   max-height: 40px;
 }
 .form-control {
@@ -68,6 +67,7 @@ a:active {
 .form-control_search {
   background-color: #293449;
   width: 197px;
+  display: inline;
   height: 100%;
 }
 .form-control_search:hover {
@@ -94,22 +94,25 @@ a:active {
 /*------BOOKMARKS------*/
 .header__bookmarks {
   line-height: 43px;
-  /*height: 100%;*/
-  /*position: relative;*/
+  max-height: 40px;
 }
 .bookmarks {
-  padding: 10px 20px;
+  padding: 0 20px;
 }
-.bookmarks:hover {
+.bookmarks__top {
+  display: inline-block;
+  height: 100%;
+}
+.bookmarks__top:hover {
   background-color: #212a3a;
 }
-.bookmarks:hover .fa-bookmark {
+.bookmarks__top:hover .fa-bookmark {
   color: #fff;
 }
-.bookmarks:active {
+.bookmarks__top:active {
   background-color: #161d29;
 }
-.bookmarks:active .icon__awsome_grey{
+.bookmarks__top:active .icon__awsome_grey{
   color: #8b8e94;
 }
 /*------ICON BOOKMARKS------*/
@@ -117,22 +120,27 @@ a:active {
   padding-right: 9px;
 }
 /*------BASKET------*/
-.basket {
-  padding: 10px 20px;
-}
 .header__basket {
   line-height: 42px;
+  max-height: 40px;
 }
-.basket:hover {
+.basket {
+  padding: 0 20px;
+}
+.basket__top {
+  display: inline-block;
+  height: 100%;
+}
+.basket__top:hover {
   background-color: #212a3a;
 }
-.basket:hover .fa-shopping-cart {
+.basket__top:hover .fa-shopping-cart {
   color: #fff;
 }
-.basket:active {
+.basket__top:active {
   background-color: #161d29;
 }
-.basket:active .icon__awsome_grey {
+.basket__top:active .icon__awsome_grey {
   color: #8b8e94;
 }
 /*------ICON BASKET------*/
@@ -142,24 +150,24 @@ a:active {
 }
 /*------CHESKOUT------*/
 .header__checkout {
-  display: inline-block;
-  line-height: 42px;
+  line-height: 43px;
   min-height: 40px;
-  position: relative;
-  }
+}
 .checkout__button_green {
   background-color: #63a63e;
   font-family: 'Cuprum', sans-serif; 
   font-size: 17px;
   color: #fff;
-  padding: 12px 26px;
+  padding: 0 26px;
   text-decoration: none;
-  height: 100%;
-  /*position: absolute;*/
 }
-.checkout__button_green:hover {
+.checkout__button {
+  display: inline-block;
+  height: 100%;
+}
+.checkout__button:hover {
   background-color: #5fbb2d;
 }
-.checkout__button_green:active {
+.checkout__button:active {
   background-color: #518534;
 }
