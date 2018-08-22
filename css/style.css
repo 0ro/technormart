@@ -13,17 +13,16 @@ input:focus {
 a:active {
   border-style: none;
 }
-/*------HEADER------*/
-.header {
-  background-color: #293449;
-  text-align: center;
-}
+/*------HEADER TOP------*/
 .header__top {
+  background-color: #293449;
+}
+.container {
   width: 940px;
-  max-height: 42px;
   margin:0 auto;
+}
+.container__display_flex {
   display: flex;
-  text-align: center;
 }
 /*------HEADER ITEMS------*/
 .header__item {
@@ -68,6 +67,7 @@ a:active {
   padding: 0 0 0 45px;
   margin: 0;
   min-height: 42px;
+  height: 100%;
 }
 .form-control_search:hover {
   background-color: #212a3a;
@@ -149,20 +149,20 @@ a:active {
 .header__checkout {
   line-height: 43px;
 }
-.checkout__button_green {
+.button_green {
   background-color: #63a63e;
   font-size: 17px;
   color: #fff;
   padding: 0 26px;
   text-decoration: none;
 }
-.checkout__button {
+.button_green-checkout {
   display: inline-block;
   height: 100%;
 }
-.checkout__button:hover {
+.button_green-checkout:hover {
   background-color: #5fbb2d;
 }
-.checkout__button:active {
+.button_green-checkout:active {
   background-color: #518534;
 }

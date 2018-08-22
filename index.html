@@ -11,71 +11,78 @@
   <!-- header -->
   <div class="header">
     <div class="header__top">
-      <!-- logo -->
-      <div class="header__item header__logo">
-        <a class="logo" href="#">
+      <div class="container container__display_flex">
+        <!-- logo -->
+        <div class="header__item header__logo">
+          <a class="logo" href="#">
           техномарт
-        </a>
-      </div>
-      <!-- search -->
-      <div class="header__item header__search">
-        <input type="text" class="form-control form-control_search" placeholder=" Поиск ">
-        <i class="fas fa-search  icon__awsome_grey-search">
-        </i>
-      </div>
-      <!-- bookmarks -->
-      <div class="header__item header__bookmarks">
-        <a class="bookmarks bookmarks__top" href="#">
-          <span class="icon_bookmarks">
-            <i class="fas fa-bookmark icon__awsome icon__awsome_grey"></i>
-          </span>
-          Закладки: <span>0</span>
-        </a>
-      </div>
-      <!-- backet -->
-      <div class="header__item header__basket">
-        <a class="basket basket__top" href="#">
-          <div class="icon_basket">
-            <i class="fas fa-shopping-cart  icon__awsome icon__awsome_grey"></i>
-          </div>
-            Корзина: <span>0</span>
-        </a>
-      </div>
+          </a>
+        </div>
+        <!-- search -->
+        <div class="header__item header__search">
+          <input type="text" class="form-control form-control_search" placeholder=" Поиск ">
+          <i class="fas fa-search  icon__awsome_grey-search">
+          </i>
+        </div>
+        <!-- bookmarks -->
+        <div class="header__item header__bookmarks">
+          <a class="bookmarks bookmarks__top" href="#">
+            <span class="icon_bookmarks">
+              <i class="fas fa-bookmark icon__awsome icon__awsome_grey"></i>
+            </span>
+            Закладки: <span>0</span>
+          </a>
+        </div>
+        <!-- backet -->
+        <div class="header__item header__basket">
+          <a class="basket basket__top" href="#">
+            <div class="icon_basket">
+              <i class="fas fa-shopping-cart  icon__awsome icon__awsome_grey"></i>
+            </div>
+              Корзина: <span>0</span>
+          </a>
+        </div>
         <!-- checkout -->
         <div class="header__item header__checkout">
-          <a class="checkout__button checkout__button_green" href="#">Оформить заказ</a>
+          <a class="checkout__button button_green button_green-checkout" href="#">Оформить заказ</a>
         </div>
+      </div>
+    </div>
+    <div class="header__middle">
+      <div class="container container__display_flex">
+        <!-- description -->
+        <div class="description">
+          <div class="description__title">
+            Интернет-магазин строительный материалов и инструментов для ремонта
+          </div>
+        </div>
+        <div class="contacts">
+          <!-- phone -->
+          <div class="contacts__phone">
+            <i class="fas fa-phone contacts__phone-icon">
+            </i>
+              +7 (812) 555-05-55
+          </div>
+          <!-- address -->
+          <div class="contacts__address">
+            г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </div>
+        </div>
+        <div class="entrance">
+          <!-- sign in -->
+          <a class="entrance__sign-in button_white button_white-sign-in" href="#">
+            <i class="fas fa-sign-in-alt banner__sign-in_icon">
+            </i>
+              Войти
+          </a>
+          <!-- check-in -->
+          <a class="entrance__check-in button_white button_white-check-in" href="#">
+            Регистрация
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   <!-- end header -->
-  <!-- banner -->
-  <div class="banner__large">
-    <div class="banner">
-      <!-- description -->
-      <div class="description banner__description">
-        Интернет-магазин строительный материалов и инструментов для ремонта
-      </div>
-      <!-- phone -->
-      <div class="phone banner__phone">
-        <i class="fas fa-phone banner__phone-icon">
-        </i>
-        +7 (812) 555-05-55
-      </div>
-      <!-- address -->
-      <div class="address banner__address">
-        г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </div>
-      <!-- sign-in -->
-      <a class="sign-in banner__sign-in" href="#">
-        <i class="fas fa-sign-in-alt banner__sign-in_icon">
-        </i>
-        Войти
-      </a>
-      <!-- check-in -->
-      <a class="check-in banner__check-in" href="#">
-        Регистрация
-      </a>
-    </div>
-  </div>
 </body>
 </html>
