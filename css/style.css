@@ -21,7 +21,7 @@ a:active {
   width: 940px;
   margin:0 auto;
 }
-.container__display_flex {
+.flex {
   display: flex;
 }
 /*------HEADER ITEMS------*/
@@ -75,17 +75,16 @@ a:active {
 .form-control_search:focus {
   background-color: #fff;
 }
-.form-control_search:focus+.icon__awsome_grey-search {
+.form-control_search:focus+.icon_grey-search {
   color: red;
 }
 /*------ICONS------*/
-.icon__awsome_grey {
+.icon_grey {
   color: #6a7180;
 }
 /*------ICON SEARCH------*/
-.icon__awsome_grey-search {
+.icon_grey-search {
   font-size: 1.2em;
-  color: #6a7180;
   position: absolute;
   left: 20px;
   top: 12px;
@@ -110,7 +109,7 @@ a:active {
 .bookmarks__top:active {
   background-color: #161d29;
 }
-.bookmarks__top:active .icon__awsome_grey{
+.bookmarks__top:active .icon_grey{
   color: #8b8e94;
 }
 /*------ICON BOOKMARKS------*/
@@ -137,7 +136,7 @@ a:active {
 .basket__top:active {
   background-color: #161d29;
 }
-.basket__top:active .icon__awsome_grey {
+.basket__top:active .icon_grey {
   color: #8b8e94;
 }
 /*------ICON BASKET------*/
@@ -149,20 +148,20 @@ a:active {
 .header__checkout {
   line-height: 43px;
 }
-.button_green {
+.btn_green {
   background-color: #63a63e;
   font-size: 17px;
   color: #fff;
   padding: 0 26px;
   text-decoration: none;
 }
-.button_green-checkout {
+.btn_green-checkout {
   display: inline-block;
   height: 100%;
 }
-.button_green-checkout:hover {
+.btn_green-checkout:hover {
   background-color: #5fbb2d;
 }
-.button_green-checkout:active {
+.btn_green-checkout:active {
   background-color: #518534;
 }

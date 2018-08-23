@@ -11,7 +11,7 @@
   <!-- header -->
   <div class="header">
     <div class="header__top">
-      <div class="container container__display_flex">
+      <div class="container flex">
         <!-- logo -->
         <div class="header__item header__logo">
           <a class="logo" href="#">
@@ -21,64 +21,62 @@
         <!-- search -->
         <div class="header__item header__search">
           <input type="text" class="form-control form-control_search" placeholder=" Поиск ">
-          <i class="fas fa-search  icon__awsome_grey-search">
+          <i class="fas fa-search icon_grey icon_grey-search">
           </i>
         </div>
         <!-- bookmarks -->
         <div class="header__item header__bookmarks">
           <a class="bookmarks bookmarks__top" href="#">
-            <span class="icon_bookmarks">
-              <i class="fas fa-bookmark icon__awsome icon__awsome_grey"></i>
-            </span>
+            <i class="fas fa-bookmark icon_grey icon_bookmarks"></i>
             Закладки: <span>0</span>
           </a>
         </div>
         <!-- backet -->
         <div class="header__item header__basket">
           <a class="basket basket__top" href="#">
-            <div class="icon_basket">
-              <i class="fas fa-shopping-cart  icon__awsome icon__awsome_grey"></i>
-            </div>
+            <i class="fas fa-shopping-cart icon_grey icon_basket"></i>
               Корзина: <span>0</span>
           </a>
         </div>
         <!-- checkout -->
         <div class="header__item header__checkout">
-          <a class="checkout__button button_green button_green-checkout" href="#">Оформить заказ</a>
+          <a class="btn_green btn_green-checkout" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
     <div class="header__middle">
-      <div class="container container__display_flex">
+      <div class="container flex">
         <!-- description -->
-        <div class="description">
-          <div class="description__title">
-            Интернет-магазин строительный материалов и инструментов для ремонта
-          </div>
+        <div class="description description__title">
+            <span>Интернет-магазин строительный материалов и инструментов для ремонта</span>
         </div>
-        <div class="contacts">
+        <div class="contacts header__contacts">
           <!-- phone -->
-          <div class="contacts__phone">
-            <i class="fas fa-phone contacts__phone-icon">
+          <div class="phone phone__value">
+            <i class="fas fa-phone phone__icon">
             </i>
-              +7 (812) 555-05-55
+            <span>+7 (812) 555-05-55</span>
           </div>
           <!-- address -->
-          <div class="contacts__address">
-            г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          <div class="address address__value">
+            <span>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
         </div>
         <div class="entrance">
           <!-- sign in -->
-          <a class="entrance__sign-in button_white button_white-sign-in" href="#">
-            <i class="fas fa-sign-in-alt banner__sign-in_icon">
-            </i>
-              Войти
-          </a>
+          <div class="sign-in">
+            <a class="btn_icon btn_sign-in" href="#">
+              <i class="fas fa-sign-in-alt icon_light-grey sign-in__icon">
+              </i>
+                Войти
+            </a>
+          </div>
           <!-- check-in -->
-          <a class="entrance__check-in button_white button_white-check-in" href="#">
-            Регистрация
-          </a>
+          <div class="check-in">
+            <a class="btn_default btn_check-in" href="#">
+              Регистрация
+            </a>
+          </div>
         </div>
       </div>
     </div>
