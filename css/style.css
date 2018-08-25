@@ -14,7 +14,7 @@ a:active {
   border-style: none;
 }
 /*------HEADER TOP------*/
-.header__top {
+.header-top {
   background-color: #293449;
 }
 .container {
@@ -40,18 +40,18 @@ a:active {
   line-height: 40px;
   border-bottom: 5px #b52933 solid;
 }
-.header__logo {
+.header-top__logo {
   max-width: 220px;
 }
-.logo:hover {
+.logo_active:hover {
   background-color: #ca2c37;
 }
-.logo:active {
+.logo_active:active {
   background-color: #ba2732;
   border-bottom: 5px #b52933 solid;
 }
 /*------SEARCH------*/
-.header__search {
+.header-top__search {
   line-height: 42px;
   position: relative;
 }
@@ -90,7 +90,7 @@ a:active {
   top: 12px;
 }
 /*------BOOKMARKS------*/
-.header__bookmarks {
+.header-top__bookmarks {
   line-height: 43px;
 }
 .bookmarks {
@@ -117,7 +117,7 @@ a:active {
   padding-right: 9px;
 }
 /*------BASKET------*/
-.header__basket {
+.header-top__basket {
   line-height: 42px;
 }
 .basket {
@@ -145,7 +145,7 @@ a:active {
   display: inline-block;
 }
 /*------CHESKOUT------*/
-.header__checkout {
+.header-top__checkout {
   line-height: 43px;
 }
 .btn_green {

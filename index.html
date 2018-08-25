@@ -10,70 +10,71 @@
 <body>
   <!-- header -->
   <div class="header">
-    <div class="header__top">
+    <div class="header-top">
       <div class="container flex">
         <!-- logo -->
-        <div class="header__item header__logo">
-          <a class="logo" href="#">
+        <div class="header__item header-top__logo">
+          <a class="logo logo_active" href="#">
           техномарт
           </a>
         </div>
         <!-- search -->
-        <div class="header__item header__search">
+        <div class="header__item header-top__search">
           <input type="text" class="form-control form-control_search" placeholder=" Поиск ">
           <i class="fas fa-search icon_grey icon_grey-search">
           </i>
         </div>
         <!-- bookmarks -->
-        <div class="header__item header__bookmarks">
+        <div class="header__item header-top__bookmarks">
           <a class="bookmarks bookmarks__top" href="#">
             <i class="fas fa-bookmark icon_grey icon_bookmarks"></i>
             Закладки: <span>0</span>
           </a>
         </div>
         <!-- backet -->
-        <div class="header__item header__basket">
+        <div class="header__item header-top__basket">
           <a class="basket basket__top" href="#">
             <i class="fas fa-shopping-cart icon_grey icon_basket"></i>
               Корзина: <span>0</span>
           </a>
         </div>
         <!-- checkout -->
-        <div class="header__item header__checkout">
+        <div class="header__item header-top__checkout">
           <a class="btn_green btn_green-checkout" href="#">Оформить заказ</a>
         </div>
       </div>
     </div>
-    <div class="header__middle">
+    <div class="header-middle">
       <div class="container flex">
         <!-- description -->
-        <div class="description description__title">
-            <span>Интернет-магазин строительный материалов и инструментов для ремонта</span>
+        <div class="description header-middle__description">
+            <div class="description__value">Интернет-магазин строительный материалов и инструментов для ремонта</div>
         </div>
-        <div class="contacts header__contacts">
+        <div class="contacts header-middle__contacts">
           <!-- phone -->
-          <div class="phone phone__value">
+          <div class="phone contacts__phone">
             <i class="fas fa-phone phone__icon">
             </i>
-            <span>+7 (812) 555-05-55</span>
+            <div class="phone__value">+7 (812) 555-05-55
+            </div>
           </div>
           <!-- address -->
-          <div class="address address__value">
-            <span>г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+          <div class="address contacts__address">
+            <div class="address__value">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
           </div>
         </div>
-        <div class="entrance">
+        <div class="entrance header-middle__entrance">
           <!-- sign in -->
-          <div class="sign-in">
-            <a class="btn_icon btn_sign-in" href="#">
+          <div class="sign-in entrance__sign-in">
+            <a class="btn_icon sign-in__btn" href="#">
               <i class="fas fa-sign-in-alt icon_light-grey sign-in__icon">
               </i>
                 Войти
             </a>
           </div>
           <!-- check-in -->
-          <div class="check-in">
-            <a class="btn_default btn_check-in" href="#">
+          <div class="check-in entrance__check-in">
+            <a class="btn_default check-in__btn" href="#">
               Регистрация
             </a>
           </div>
