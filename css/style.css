@@ -75,7 +75,7 @@ a:active {
 .form-control_search:focus {
   background-color: #fff;
 }
-.form-control_search:focus+.icon_grey-search {
+.form-control_search:focus+.search__icon {
   color: red;
 }
 /*------ICONS------*/
@@ -83,7 +83,7 @@ a:active {
   color: #6a7180;
 }
 /*------ICON SEARCH------*/
-.icon_grey-search {
+.search__icon {
   font-size: 1.2em;
   position: absolute;
   left: 20px;
