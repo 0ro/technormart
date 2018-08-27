@@ -90,27 +90,27 @@ a:active {
   top: 12px;
 }
 /*------BOOKMARKS------*/
-.header-top__bookmarks {
+.header__bookmarks {
   line-height: 43px;
 }
 .bookmarks {
   padding: 0 20px;
 }
-.bookmarks__top {
+.bookmarks_active {
   display: inline-block;
   height: 100%;
 }
-.bookmarks__top:hover {
+.bookmarks_active:hover {
   background-color: #212a3a;
 }
-.bookmarks__top:hover .fa-bookmark {
+.bookmarks_active:hover .fa-bookmark {
   color: #fff;
 }
-.bookmarks__top:active {
+.bookmarks_active:active {
   background-color: #161d29;
   color: #babbbd;
 }
-.bookmarks__top:active .icon_grey{
+.bookmarks_active:active .icon_grey{
   color: #8b8e94;
 }
 /*------ICON BOOKMARKS------*/
