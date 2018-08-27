@@ -147,7 +147,7 @@ a:active {
   display: inline-block;
 }
 /*------CHESKOUT------*/
-.header-top__checkout {
+.header__checkout {
   line-height: 43px;
 }
 .btn_green {
@@ -157,14 +157,14 @@ a:active {
   padding: 0 26px;
   text-decoration: none;
 }
-.btn_green-checkout {
+.checkout__btn {
   display: inline-block;
   height: 100%;
 }
-.btn_green-checkout:hover {
+.checkout__btn:hover {
   background-color: #5fbb2d;
 }
-.btn_green-checkout:active {
+.checkout__btn:active {
   background-color: #518534;
   color: #babbbd;
 }
