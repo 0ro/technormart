@@ -51,7 +51,7 @@ a:active {
   border-bottom: 5px #b52933 solid;
 }
 /*------SEARCH------*/
-.header-top__search {
+.header__search {
   line-height: 42px;
   position: relative;
 }
