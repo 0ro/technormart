@@ -14,7 +14,7 @@ a:active {
   border-style: none;
 }
 /*------HEADER TOP------*/
-.header-top {
+.topbar {
   background-color: #293449;
 }
 .container {
@@ -40,7 +40,7 @@ a:active {
   line-height: 40px;
   border-bottom: 5px #b52933 solid;
 }
-.header-top__logo {
+.header__logo {
   max-width: 220px;
 }
 .logo_active:hover {
@@ -108,6 +108,7 @@ a:active {
 }
 .bookmarks__top:active {
   background-color: #161d29;
+  color: #babbbd;
 }
 .bookmarks__top:active .icon_grey{
   color: #8b8e94;
@@ -135,6 +136,7 @@ a:active {
 }
 .basket__top:active {
   background-color: #161d29;
+  color: #babbbd;
 }
 .basket__top:active .icon_grey {
   color: #8b8e94;
@@ -164,4 +166,5 @@ a:active {
 }
 .btn_green-checkout:active {
   background-color: #518534;
+  color: #babbbd;
 }
