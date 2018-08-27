@@ -118,27 +118,27 @@ a:active {
   padding-right: 9px;
 }
 /*------BASKET------*/
-.header-top__basket {
+.header__basket {
   line-height: 42px;
 }
 .basket {
   padding: 0 20px;
 }
-.basket__top {
+.basket_active {
   display: inline-block;
   height: 100%;
 }
-.basket__top:hover {
+.basket_active:hover {
   background-color: #212a3a;
 }
-.basket__top:hover .fa-shopping-cart {
+.basket_active:hover .fa-shopping-cart {
   color: #fff;
 }
-.basket__top:active {
+.basket_active:active {
   background-color: #161d29;
   color: #babbbd;
 }
-.basket__top:active .icon_grey {
+.basket_active:active .icon_grey {
   color: #8b8e94;
 }
 /*------ICON BASKET------*/
