@@ -13,17 +13,16 @@ input:focus {
 a:active {
   border-style: none;
 }
-/*------HEADER------*/
-.header {
+/*------HEADER TOP------*/
+.topbar {
   background-color: #293449;
-  text-align: center;
 }
-.header__top {
+.container {
   width: 940px;
-  max-height: 42px;
   margin:0 auto;
+}
+.flex {
   display: flex;
-  text-align: center;
 }
 /*------HEADER ITEMS------*/
 .header__item {
@@ -44,10 +43,10 @@ a:active {
 .header__logo {
   max-width: 220px;
 }
-.logo:hover {
+.logo_active:hover {
   background-color: #ca2c37;
 }
-.logo:active {
+.logo_active:active {
   background-color: #ba2732;
   border-bottom: 5px #b52933 solid;
 }
@@ -68,6 +67,7 @@ a:active {
   padding: 0 0 0 45px;
   margin: 0;
   min-height: 42px;
+  height: 100%;
 }
 .form-control_search:hover {
   background-color: #212a3a;
@@ -75,17 +75,16 @@ a:active {
 .form-control_search:focus {
   background-color: #fff;
 }
-.form-control_search:focus+.icon__awsome_grey-search {
+.form-control_search:focus+.search__icon {
   color: red;
 }
 /*------ICONS------*/
-.icon__awsome_grey {
+.icon_grey {
   color: #6a7180;
 }
 /*------ICON SEARCH------*/
-.icon__awsome_grey-search {
+.search__icon {
   font-size: 1.2em;
-  color: #6a7180;
   position: absolute;
   left: 20px;
   top: 12px;
@@ -97,24 +96,25 @@ a:active {
 .bookmarks {
   padding: 0 20px;
 }
-.bookmarks__top {
+.bookmarks_active {
   display: inline-block;
   height: 100%;
 }
-.bookmarks__top:hover {
+.bookmarks_active:hover {
   background-color: #212a3a;
 }
-.bookmarks__top:hover .fa-bookmark {
+.bookmarks_active:hover .fa-bookmark {
   color: #fff;
 }
-.bookmarks__top:active {
+.bookmarks_active:active {
   background-color: #161d29;
+  color: #babbbd;
 }
-.bookmarks__top:active .icon__awsome_grey{
+.bookmarks_active:active .icon_grey{
   color: #8b8e94;
 }
 /*------ICON BOOKMARKS------*/
-.icon_bookmarks {
+.bookmarks__icon {
   padding-right: 9px;
 }
 /*------BASKET------*/
@@ -124,24 +124,25 @@ a:active {
 .basket {
   padding: 0 20px;
 }
-.basket__top {
+.basket_active {
   display: inline-block;
   height: 100%;
 }
-.basket__top:hover {
+.basket_active:hover {
   background-color: #212a3a;
 }
-.basket__top:hover .fa-shopping-cart {
+.basket_active:hover .fa-shopping-cart {
   color: #fff;
 }
-.basket__top:active {
+.basket_active:active {
   background-color: #161d29;
+  color: #babbbd;
 }
-.basket__top:active .icon__awsome_grey {
+.basket_active:active .icon_grey {
   color: #8b8e94;
 }
 /*------ICON BASKET------*/
-.icon_basket {
+.basket__icon {
   padding-right: 9px;
   display: inline-block;
 }
@@ -149,20 +150,21 @@ a:active {
 .header__checkout {
   line-height: 43px;
 }
-.checkout__button_green {
+.btn_green {
   background-color: #63a63e;
   font-size: 17px;
   color: #fff;
   padding: 0 26px;
   text-decoration: none;
 }
-.checkout__button {
+.checkout__btn {
   display: inline-block;
   height: 100%;
 }
-.checkout__button:hover {
+.checkout__btn:hover {
   background-color: #5fbb2d;
 }
-.checkout__button:active {
+.checkout__btn:active {
   background-color: #518534;
+  color: #babbbd;
 }
