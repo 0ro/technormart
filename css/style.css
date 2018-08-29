@@ -214,10 +214,13 @@ a:active {
   color: #32425c;
   font-size: 14px;
 }
+/*------ENTRANCE------*/
+.content__entrance {
+  display: flex;
+}
 /*------SIGN-IN------*/
 .entrance__sign-in {
-  padding-top: 57px;
-  padding-left: 89px;
+  padding: 57px 0 0 83px;
 }
 .sign-in__btn {
   color: #000;
@@ -241,12 +244,11 @@ a:active {
 }
 /*------CHECK-IN------*/
 .entrance__check-in {
-  padding-left: 229px;
-  margin-top: -23px;
+  padding: 57px 0 0 13px;
 }
 .check-in__btn {
   color: #000;
-  background-color: #fff; 
+  background-color: #fff;
 }
 .check-in__btn:hover {
   color: #ee3643;
