@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
 input:focus {
   outline: none;
@@ -16,6 +16,7 @@ a:active {
 /*------HEADER TOP------*/
 .topbar {
   background-color: #293449;
+  color: #fff;  
 }
 .container {
   width: 940px;
@@ -24,10 +25,32 @@ a:active {
 .flex {
   display: flex;
 }
-/*------HEADER ITEMS------*/
-.header__item {
-  color: #fff;
-  font-size: 17px;
+/*------BUTTONS------*/
+.btn {
+  padding: 10px 24px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  display: inline-block;
+}
+.btn:hover {
+  color: #ee3643;
+}
+.btn:hover .sign-in__icon {
+  color: #32425c;
+}
+.btn:active {
+  color: #c5c5c5;
+}
+.btn:active .sign-in__icon{
+  color: #c5c5c5;
+}
+/*------ICONS------*/
+.icon_grey {
+  color: #6a7180;
+}
+.icon_light-grey {
+  color: #b7bfc8;
 }
 /*------LOGO------*/
 .logo {
@@ -78,10 +101,6 @@ a:active {
 .form-control_search:focus+.search__icon {
   color: red;
 }
-/*------ICONS------*/
-.icon_grey {
-  color: #6a7180;
-}
 /*------ICON SEARCH------*/
 .search__icon {
   font-size: 1.2em;
@@ -90,11 +109,11 @@ a:active {
   top: 12px;
 }
 /*------BOOKMARKS------*/
-.header__bookmarks {
-  line-height: 43px;
-}
 .bookmarks {
   padding: 0 20px;
+  color: #fff;
+  line-height: 43px;
+  background-color: #293449;
 }
 .bookmarks_active {
   display: inline-block;
@@ -118,11 +137,11 @@ a:active {
   padding-right: 9px;
 }
 /*------BASKET------*/
-.header__basket {
-  line-height: 42px;
-}
 .basket {
   padding: 0 20px;
+  color: #fff;
+  line-height: 43px;
+  background-color: #293449;
 }
 .basket_active {
   display: inline-block;
@@ -155,7 +174,6 @@ a:active {
   font-size: 17px;
   color: #fff;
   padding: 0 26px;
-  text-decoration: none;
 }
 .checkout__btn {
   display: inline-block;
@@ -167,4 +185,48 @@ a:active {
 .checkout__btn:active {
   background-color: #518534;
   color: #babbbd;
+}
+/*------INFORMATION------*/
+.info {
+  background-color: #f2f6f8;
+  min-height: 282px;
+}
+.info__container {
+  padding-top: 48px;
+  justify-content: space-around;
+}
+/*------DESCRIPTION------*/
+.description {
+  color: #ee4a55;
+  font-style: italic;
+  max-width: 187px;
+  line-height: 23px;
+}
+/*------PHONE------*/
+.phone {
+  border: 3px solid #fff;
+  padding: 7px 13px;
+}
+.phone__value {
+  color: #e9292a;
+  font-size: 22px;
+}
+/*------PHONE ICON------*/
+.phone__icon {
+  transform: scale(-1, 1);
+  font-size: 1.2em;
+  margin-right: 27px;
+}
+/*------ADDRESS------*/
+.address {
+  color: #32425c;
+  font-size: 14px;
+}
+/*------ENTRANCE------*/
+.entrance__item {
+margin: 0 0 0 10px;
+}
+/*------SIGN-IN ICON------*/
+.sign-in__icon {
+  padding-right: 10px; 
 }
