@@ -2,10 +2,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cuprum', sans-serif;
+  font-size: 17px;
 }
 a {
   text-decoration: none;
-  color: #fff;
 }
 input:focus {
   outline: none;
@@ -16,6 +16,7 @@ a:active {
 /*------HEADER TOP------*/
 .topbar {
   background-color: #293449;
+  color: #fff;  
 }
 .container {
   width: 940px;
@@ -24,15 +25,13 @@ a:active {
 .flex {
   display: flex;
 }
-/*------HEADER ITEMS------*/
-.header__item {
-  color: #fff;
-  font-size: 17px;
-}
 /*------BUTTONS------*/
 .btn {
   padding: 10px 24px;
-    font-size: 20px;
+  font-size: 20px;
+  color: #000;
+  background-color: #fff;
+  display: inline-block;
 }
 /*------ICONS------*/
 .icon_grey {
@@ -98,11 +97,11 @@ a:active {
   top: 12px;
 }
 /*------BOOKMARKS------*/
-.header__bookmarks {
-  line-height: 43px;
-}
 .bookmarks {
   padding: 0 20px;
+  color: #fff;
+  line-height: 43px;
+  background-color: #293449;
 }
 .bookmarks_active {
   display: inline-block;
@@ -126,11 +125,11 @@ a:active {
   padding-right: 9px;
 }
 /*------BASKET------*/
-.header__basket {
-  line-height: 42px;
-}
 .basket {
   padding: 0 20px;
+  color: #fff;
+  line-height: 43px;
+  background-color: #293449;
 }
 .basket_active {
   display: inline-block;
@@ -175,26 +174,26 @@ a:active {
   background-color: #518534;
   color: #babbbd;
 }
-/*------CONTENT------*/
-.content {
+/*------INFORMATION------*/
+.info {
   background-color: #f2f6f8;
   min-height: 282px;
 }
-/*------DESCRIPTION------*/
-.content__description {
-  padding: 50px 0 0 0;
+.info__container {
+  padding-top: 48px;
+  justify-content: space-around;
 }
-.description__value {
+/*------DESCRIPTION------*/
+.description {
   color: #ee4a55;
   font-style: italic;
-  max-width: 177px;
+  max-width: 187px;
   line-height: 23px;
 }
 /*------PHONE------*/
-.contacts__phone {
+.phone {
   border: 3px solid #fff;
   padding: 7px 13px;
-  margin: 46px 0 0 101px;
 }
 .phone__value {
   color: #e9292a;
@@ -207,25 +206,15 @@ a:active {
   margin-right: 27px;
 }
 /*------ADDRESS------*/
-.contacts__address {
-  padding: 8px 0 0 109px;
-}
-.address__value {
+.address {
   color: #32425c;
   font-size: 14px;
 }
 /*------ENTRANCE------*/
-.content__entrance {
-  display: flex;
+.entrance__item {
+margin: 0 0 0 10px;
 }
 /*------SIGN-IN------*/
-.entrance__sign-in {
-  padding: 57px 0 0 83px;
-}
-.sign-in__btn {
-  color: #000;
-  background-color: #fff;
-}
 .sign-in__btn:hover {
   color: #ee3643;
 }
@@ -243,9 +232,6 @@ a:active {
   padding-right: 10px; 
 }
 /*------CHECK-IN------*/
-.entrance__check-in {
-  padding: 57px 0 0 13px;
-}
 .check-in__btn {
   color: #000;
   background-color: #fff;
