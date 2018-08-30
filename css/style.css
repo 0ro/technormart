@@ -33,6 +33,18 @@ a:active {
   background-color: #fff;
   display: inline-block;
 }
+.btn:hover {
+  color: #ee3643;
+}
+.btn:hover .sign-in__icon {
+  color: #32425c;
+}
+.btn:active {
+  color: #c5c5c5;
+}
+.btn:active .sign-in__icon{
+  color: #c5c5c5;
+}
 /*------ICONS------*/
 .icon_grey {
   color: #6a7180;
@@ -214,31 +226,7 @@ a:active {
 .entrance__item {
 margin: 0 0 0 10px;
 }
-/*------SIGN-IN------*/
-.sign-in__btn:hover {
-  color: #ee3643;
-}
-.sign-in__btn:hover .sign-in__icon {
-  color: #32425c;
-}
-.sign-in__btn:active {
-  color: #c5c5c5;
-}
-.sign-in__btn:active .sign-in__icon{
-  color: #c5c5c5;
-}
 /*------SIGN-IN ICON------*/
 .sign-in__icon {
   padding-right: 10px; 
-}
-/*------CHECK-IN------*/
-.check-in__btn {
-  color: #000;
-  background-color: #fff;
-}
-.check-in__btn:hover {
-  color: #ee3643;
-}
-.check-in__btn:active {
-  color: #c5c5c5;
 }
