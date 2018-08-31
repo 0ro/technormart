@@ -25,6 +25,9 @@ a:active {
 .flex {
   display: flex;
 }
+.topbar__container {
+  justify-content: space-around;
+}
 /*------BUTTONS------*/
 .btn {
   padding: 10px 24px;
@@ -77,6 +80,7 @@ a:active {
 .header__search {
   line-height: 42px;
   position: relative;
+  margin-left: -7px;
 }
 .form-control {
   font-family: 'Cuprum', sans-serif; 
@@ -181,6 +185,7 @@ a:active {
 }
 .checkout__btn:hover {
   background-color: #5fbb2d;
+  color: #fff;
 }
 .checkout__btn:active {
   background-color: #518534;
@@ -192,10 +197,13 @@ a:active {
   min-height: 282px;
 }
 .info__container {
-  padding-top: 48px;
-  justify-content: space-around;
+  padding: 48px 0;
+  justify-content: space-between;
 }
 /*------DESCRIPTION------*/
+.info__description {
+  margin-left: 45px;
+}
 .description {
   color: #ee4a55;
   font-style: italic;
@@ -222,11 +230,31 @@ a:active {
   color: #32425c;
   font-size: 14px;
 }
+.contacts__address {
+  margin-top: 5px;
+}
 /*------ENTRANCE------*/
 .entrance__item {
-margin: 0 0 0 10px;
+  margin: 0 0 0 10px;
 }
 /*------SIGN-IN ICON------*/
 .sign-in__icon {
   padding-right: 10px; 
+}
+.navmenu {
+  justify-content: space-around;
+  background-color: #32425c;
+  border-bottom: 5px #293449 solid;
+}
+.navmenu__item {
+  color: #fff;
+  padding: 17px;
+  display: inline-block;
+}
+.navmenu__item:hover {
+  background-color: #293449;
+}
+.navmenu__item:active {
+  background-color: #1d2739;
+  color: #9b9da2;
 }
