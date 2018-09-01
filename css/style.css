@@ -13,10 +13,14 @@ input:focus {
 a:active {
   border-style: none;
 }
+.header {
+  background-color: #f2f6f8;
+  padding-bottom: 60px;
+}
 /*------HEADER TOP------*/
 .topbar {
   background-color: #293449;
-  color: #fff;  
+  color: #fff;
 }
 .container {
   width: 940px;
@@ -192,10 +196,6 @@ a:active {
   color: #babbbd;
 }
 /*------INFORMATION------*/
-.info {
-  background-color: #f2f6f8;
-  min-height: 282px;
-}
 .info__container {
   padding: 48px 0;
   justify-content: space-between;
@@ -248,8 +248,10 @@ a:active {
 }
 .navmenu__item {
   color: #fff;
-  padding: 17px;
+  padding: 17px 0;
   display: inline-block;
+  flex: auto;
+  text-align: center;
 }
 .navmenu__item:hover {
   background-color: #293449;
