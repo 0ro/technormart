@@ -72,6 +72,7 @@ a:active {
 }
 .header__logo {
   max-width: 220px;
+  flex: auto;
 }
 .logo_active:hover {
   background-color: #ca2c37;
@@ -84,7 +85,8 @@ a:active {
 .header__search {
   line-height: 42px;
   position: relative;
-  margin-left: -7px;
+  flex: auto;
+  /*margin-left: -7px;*/
 }
 .form-control {
   font-family: 'Cuprum', sans-serif; 
@@ -93,12 +95,13 @@ a:active {
 }
 .form-control_search {
   background-color: #293449;
-  width: 197px;
+  width: 225px;
   display: inline-block;
   padding: 0 0 0 45px;
   margin: 0;
   min-height: 42px;
   height: 100%;
+  flex: auto;
 }
 .form-control_search:hover {
   background-color: #212a3a;
@@ -122,6 +125,7 @@ a:active {
   color: #fff;
   line-height: 43px;
   background-color: #293449;
+  flex: auto;
 }
 .bookmarks_active {
   display: inline-block;
@@ -150,6 +154,7 @@ a:active {
   color: #fff;
   line-height: 43px;
   background-color: #293449;
+  flex: auto;
 }
 .basket_active {
   display: inline-block;
@@ -176,6 +181,7 @@ a:active {
 /*------CHESKOUT------*/
 .header__checkout {
   line-height: 43px;
+  flex: auto;
 }
 .btn_green {
   background-color: #63a63e;
@@ -244,7 +250,7 @@ a:active {
   padding-right: 10px; 
 }
 .navmenu {
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #32425c;
   border-bottom: 5px #293449 solid;
 }
