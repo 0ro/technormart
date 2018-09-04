@@ -30,23 +30,26 @@ a:active {
   justify-content: space-around;
 }
 /*------BUTTONS------*/
-.btn {
+.btn_uppercase {
+  text-transform: uppercase;
+}
+.btn_white {
   padding: 10px 24px;
   font-size: 20px;
   color: #000;
   background-color: #fff;
   display: inline-block;
 }
-.btn:hover {
+.btn_white:hover {
   color: #ee3643;
 }
-.btn:hover .sign-in__icon {
+.btn_white:hover .sign-in__icon {
   color: #32425c;
 }
-.btn:active {
+.btn_white:active {
   color: #c5c5c5;
 }
-.btn:active .sign-in__icon{
+.btn_white:active .sign-in__icon{
   color: #c5c5c5;
 }
 /*------ICONS------*/
