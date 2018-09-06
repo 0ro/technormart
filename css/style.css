@@ -7,9 +7,6 @@ body {
 a {
   text-decoration: none;
 }
-input:focus {
-  outline: none;
-}
 a:active {
   border-style: none;
 }
@@ -33,23 +30,26 @@ a:active {
   justify-content: space-around;
 }
 /*------BUTTONS------*/
-.btn {
+.btn_uppercase {
+  text-transform: uppercase;
+}
+.btn_white {
   padding: 10px 24px;
   font-size: 20px;
   color: #000;
   background-color: #fff;
   display: inline-block;
 }
-.btn:hover {
+.btn_white:hover {
   color: #ee3643;
 }
-.btn:hover .sign-in__icon {
+.btn_white:hover .sign-in__icon {
   color: #32425c;
 }
-.btn:active {
+.btn_white:active {
   color: #c5c5c5;
 }
-.btn:active .sign-in__icon{
+.btn_white:active .sign-in__icon{
   color: #c5c5c5;
 }
 /*------ICONS------*/
@@ -86,7 +86,6 @@ a:active {
   line-height: 42px;
   position: relative;
   flex: auto;
-  /*margin-left: -7px;*/
 }
 .form-control {
   font-family: 'Cuprum', sans-serif; 
@@ -108,6 +107,7 @@ a:active {
 }
 .form-control_search:focus {
   background-color: #fff;
+  outline: none;
 }
 .form-control_search:focus+.search__icon {
   color: red;
