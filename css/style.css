@@ -307,7 +307,7 @@ a:active {
 .card__text {
   color: #fff;
   font-size: 26px;
-    padding: 24px 0 0 19px;
+  padding: 24px 0 0 19px;
 }
 .card_orange {
   background-color: #ffbf47;
@@ -356,7 +356,7 @@ a:active {
 }
 /*------SLIDER------*/
 .offers__slider {
-float: left;
+  float: left;
 }
 .slider {
   background-image: url(../img/slider1.png);
