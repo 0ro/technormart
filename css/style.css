@@ -307,7 +307,9 @@ a:active {
   margin: 0 10px;
 }
 .card_new {
-
+  background-image: url(../img/new.png);
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
 }
 .offers__card {
   position: relative;
@@ -335,7 +337,7 @@ a:active {
 .card_yellow {
   background-color: #ffc047;
 }
-/* ------CARD ICON------*/
+/*------CARD ICON------*/
 .card__icon {
   position: absolute;
   right: 41px;
@@ -366,8 +368,10 @@ a:active {
   width: 66%;
 }
 .slider {
-  background-image: url(../img/slider1.png);
   height: 265px;
+}
+.slider_1 {
+  background-image: url(../img/slider1.png);
 }
 .slider__title {
   color: #fff;
@@ -383,8 +387,7 @@ a:active {
   margin-left: 28px;
 }
 .slider__btn {
-  margin-left: 24px;
-  margin-top: 47px;
+  margin: 47px 0 0 24px;
 }
 /*------SLIDER ARROWS------*/
 .slider__arrows {
@@ -405,14 +408,13 @@ a:active {
   border-radius: 50%;
   height: 7px;
   width: 7px;
+  border: 2px #fff solid;
 }
 .indicator_1 {
   background-color: #ee3643;
-  border: 2px #fff solid;
 }
 .indicator_2 {
   background-color: #fff;
-  border: 2px #fff solid;
 }
 .slider__indicator-group {
   margin-left: 75px;
