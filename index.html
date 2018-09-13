@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
   <!-- header -->
@@ -107,11 +109,16 @@
   </div>
   <!-- end header -->
   <!-- content -->
-  <!-- card 1 -->
   <div class="content">
     <div class="offers content__offers container">
-      <div class="row content__row">
-        <div class="card offers__card card_orange card_new inline-block">
+      <div class="content__row">
+        <!-- card 1 -->
+        <div class="card offers__card card_orange inline-block">
+          <div class="card__flag">
+            <div class="flag_action">
+              new
+            </div>
+          </div>
           <div class="card__text">
           Материалы
           </div>
@@ -149,14 +156,6 @@
         <div class="slider__text">
           Настоящие мужские игрушки
         </div>
-        <div class="arrows slider__arrows">
-          <a href="#">
-            <i class="fas fa-angle-left arrow slider__arrow_left"></i>
-          </a>
-          <a href="#">
-          <i class="fas fa-angle-right arrow slider__arrow_right"></i>
-          </a>
-        </div>
         <a class="btn btn_red btn_uppercase slider__btn" href="#">
           Открыть каталог
         </a>
@@ -165,9 +164,24 @@
           <div class="indicator slider__indicator indicator_2 inline-block"></div>
         </div>
       </div>
+      <!-- <div class="slider offers__slider slider_2">
+        <div class="slider__title">
+          Дрели
+        </div>
+        <div class="slider__text">
+          Соседям на радость!
+        </div>
+        <a class="btn btn_red btn_uppercase slider__btn" href="#">
+          Открыть каталог
+        </a>
+        <div class="slider__indicator-group inline-block">
+          <div class="indicator slider__indicator indicator_1 inline-block"></div>
+          <div class="indicator slider__indicator indicator_2 inline-block"></div>
+        </div>
+      </div> -->
       <!-- card 4 -->
       <div class="content__row_right">
-        <div class="card offers__card card_green">
+        <div class="card offers__card card_green inline-block">
           <div class="card__text">
             Скидки 50%
           </div>
@@ -189,5 +203,8 @@
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>

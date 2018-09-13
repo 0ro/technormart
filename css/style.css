@@ -25,12 +25,18 @@ a:active {
 }
 .flex {
   display: flex;
+  -webkit-justify-display: flex;
+  -mos-justify-display: flex;
+  -ms-justify-display: flex;
 }
 .inline-block {
   display: inline-block;
 }
 .topbar__container {
   justify-content: space-around;
+  -webkit-justify-content: space-around;
+  -mos-justify-content: space-around;
+  -ms-justify-content: space-around;
 }
 /*------BUTTONS------*/
 .btn {
@@ -101,6 +107,9 @@ a:active {
 .header__logo {
   max-width: 220px;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .logo_active:hover {
   background-color: #ca2c37;
@@ -114,6 +123,9 @@ a:active {
   line-height: 42px;
   position: relative;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .form-control {
   font-family: 'Cuprum', sans-serif; 
@@ -154,6 +166,9 @@ a:active {
   line-height: 43px;
   background-color: #293449;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .bookmarks_active {
   display: inline-block;
@@ -183,6 +198,9 @@ a:active {
   line-height: 43px;
   background-color: #293449;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .basket_active {
   display: inline-block;
@@ -210,6 +228,9 @@ a:active {
 .header__checkout {
   line-height: 43px;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .checkout__btn {
   height: 100%;
@@ -225,6 +246,9 @@ a:active {
 /*------INFORMATION------*/
 .info {
   justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -mos-justify-content: space-between;
+  -ms-justify-content: space-between;
 }
 .info__container {
   padding: 48px 0;
@@ -251,6 +275,9 @@ a:active {
 /*------PHONE ICON------*/
 .phone__icon {
   transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
   font-size: 1.2em;
   margin-right: 27px;
 }
@@ -273,6 +300,9 @@ a:active {
 /*------HAVBAR------*/
 .navmenu {
   justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -mos-justify-content: space-between;
+  -ms-justify-content: space-between;
   background-color: #32425c;
   border-bottom: 5px #293449 solid;
 }
@@ -281,6 +311,9 @@ a:active {
   padding: 17px 0;
   display: inline-block;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
   text-align: center;
 }
 .navmenu__item:hover {
@@ -302,14 +335,10 @@ a:active {
 .card {
   height: 124px;
   width: 303px;
+  background-color: #ffbf47;
 }
 .card__middle {
   margin: 0 10px;
-}
-.card_new {
-  background-image: url(../img/new.png);
-  background-repeat: no-repeat;
-  background-position: 100% 0%;
 }
 .offers__card {
   position: relative;
@@ -336,6 +365,28 @@ a:active {
 }
 .card_yellow {
   background-color: #ffc047;
+}
+/*------CARD FLAG------*/
+.card__flag {
+  position: absolute;
+  left: 203px;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+.flag_action {
+  background: #ff5357;
+  padding: 4px 8px;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  width: 200px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  right: -86px;
+  top: 7px
 }
 /*------CARD ICON------*/
 .card__icon {
@@ -373,6 +424,10 @@ a:active {
 .slider_1 {
   background-image: url(../img/slider1.png);
 }
+.slider_2 {
+  background-image: url(../img/slider2.png);
+  
+}
 .slider__title {
   color: #fff;
   text-transform: uppercase;
@@ -388,17 +443,6 @@ a:active {
 }
 .slider__btn {
   margin: 47px 0 0 24px;
-}
-/*------SLIDER ARROWS------*/
-.slider__arrows {
-  margin-top: 31px;
-}
-.slider__arrow_right {
-  float: right;
-  margin-right: 14px;
-}
-.slider__arrow_left {
-  margin-left: 14px;
 }
 /*------SLIDER INDICATORS------*/
 .slider__indicator {
@@ -417,5 +461,5 @@ a:active {
   background-color: #fff;
 }
 .slider__indicator-group {
-  margin-left: 75px;
+  margin: 132px 0 0 75px;
 }
