@@ -414,12 +414,13 @@ a:active {
   background-color: rgba(0,0,0,.3);
 }
 /*------SLIDER------*/
-.offers__slider {
+.slider__offers {
   float: left;
-  width: 66%;
+  height: 100%;
 }
 .slider {
   height: 265px;
+  width: 620px;
 }
 .slider_1 {
   background-image: url(../img/slider1.png);
