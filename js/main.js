@@ -1,1 +1,3 @@
-$('.slider').slick();
+$(document).ready(() => {
+  $('.slider').slick();
+});

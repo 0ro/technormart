@@ -323,25 +323,24 @@ a:active {
   background-color: #1d2739;
   color: #9b9da2;
 }
-/*------ROWS------*/
-.content__row {
-  margin-top: 60px;
-  margin-bottom: 17px
+.content__offers {
+  margin: 54px -5px 0 -5px;
 }
-.content__row_right {
-  float: right;
+.content__offers:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 /*------CARDS------*/
 .card {
-  height: 124px;
-  width: 303px;
+  height: 127px;
+  width: 305px;
   background-color: #ffbf47;
-}
-.card__middle {
-  margin: 0 10px;
+  float: left;
 }
 .offers__card {
   position: relative;
+  margin: 5px;
 }
 .offers__card_buttom {
   margin-top: 17px;
@@ -369,7 +368,7 @@ a:active {
 /*------CARD FLAG------*/
 .card__flag {
   position: absolute;
-  left: 203px;
+  left: 205px;
   overflow: hidden;
   height: 100px;
   width: 100px;
@@ -416,9 +415,13 @@ a:active {
 /*------SLIDER------*/
 .offers__slider {
   float: left;
-  width: 66%;
+  margin: 5px 5px 0 5px;
 }
 .slider {
+  height: 265px;
+  width: 620px;
+}
+div.slick-slide {
   height: 265px;
 }
 .slider_1 {
@@ -462,4 +465,19 @@ a:active {
 }
 .slider__indicator-group {
   margin: 132px 0 0 75px;
+}
+/*------SLIDER ARROWS------*/
+.slick-next {
+  right: 20px;
+  font-size: 36px;
+}
+.slick-next:before {
+  content: url(../img/arrow-right.png);
+}
+.slick-prev {
+  left: 20px;
+  z-index: 100;
+}
+.slick-prev:before {
+  content: url(../img/arrow-left.png);
 }
