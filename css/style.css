@@ -32,6 +32,11 @@ a:active {
 .inline-block {
   display: inline-block;
 }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .topbar__container {
   justify-content: space-around;
   -webkit-justify-content: space-around;
@@ -297,7 +302,7 @@ a:active {
 .sign-in__icon {
   padding-right: 10px; 
 }
-/*------HAVBAR------*/
+/*------NAVBAR------*/
 .navmenu {
   justify-content: space-between;
   -webkit-justify-content: space-between;
@@ -326,17 +331,14 @@ a:active {
 .content__offers {
   margin: 54px -5px 0 -5px;
 }
-.content__offers:after {
-  content: '';
-  display: block;
-  clear: both;
-}
 /*------CARDS------*/
 .card {
   height: 127px;
   width: 305px;
   background-color: #ffbf47;
   float: left;
+  background-repeat: no-repeat;
+  background-position: 205px 34px;
 }
 .offers__card {
   position: relative;
@@ -348,22 +350,28 @@ a:active {
 .card__text {
   color: #fff;
   font-size: 26px;
-  padding: 24px 0 0 19px;
+  margin: 24px 0 0 19px;
 }
 .card_orange {
   background-color: #ffbf47;
+  background-image: url(../img/icon-1.svg);
 }
 .card_blue {
   background-color: #3bbce3;
+  background-image: url(../img/icon-2.svg);
 }
 .card_purple {
   background-color: #dc91d8;
+  background-image: url(../img/icon-3.svg);
+  
 }
 .card_green {
   background-color: #8ed78f;
+  background-image: url(../img/icon-4.svg);
 }
 .card_yellow {
   background-color: #ffc047;
+  background-image: url(../img/icon-5.svg);
 }
 /*------CARD FLAG------*/
 .card__flag {
@@ -387,22 +395,15 @@ a:active {
   right: -86px;
   top: 7px
 }
-/*------CARD ICON------*/
-.card__icon {
-  position: absolute;
-  right: 41px;
-  top: 32px;
-}
 /*------COLORFUL BUTTONS------*/
 .card__btn {
   margin: 13px 0 0 24px;
 }
 .btn_colorful {
   font-size: 15px;
-  padding: 10px 0;
+  padding: 10px 24px;
   color: #fff;
   background-color: rgba(0,0,0,.1);
-  width: 138px;
   text-align: center;
   border-radius: 3px;
 }
@@ -424,10 +425,10 @@ a:active {
 div.slick-slide {
   height: 265px;
 }
-.slider_1 {
+.slide_1 {
   background-image: url(../img/slider1.png);
 }
-.slider_2 {
+.slide_2 {
   background-image: url(../img/slider2.png);
 }
 .slider__title {
