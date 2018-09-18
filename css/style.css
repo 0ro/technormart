@@ -413,7 +413,7 @@ a:active {
   background-color: rgba(0,0,0,.3);
 }
 /*------SLIDER------*/
-.slider__offers {
+.offers__slider {
   float: left;
   margin: 5px 5px 0 5px;
 }
@@ -429,7 +429,6 @@ div.slick-slide {
 }
 .slider_2 {
   background-image: url(../img/slider2.png);
-  
 }
 .slider__title {
   color: #fff;
