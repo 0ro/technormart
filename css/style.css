@@ -466,6 +466,7 @@ div.slick-slide {
   bottom: 27px;
 }
 .slick-dots li.slick-active button:before {
+  content: url(../img/slider-indicator.png);
   color: #ee3643;
   opacity: 1;
 }
