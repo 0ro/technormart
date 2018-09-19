@@ -444,26 +444,7 @@ div.slick-slide {
   margin-left: 28px;
 }
 .slider__btn {
-  margin: 47px 0 0 24px;
-}
-/*------SLIDER INDICATORS------*/
-.slider__indicator {
-  margin-left: 3px;
-}
-.indicator {
-  border-radius: 50%;
-  height: 7px;
-  width: 7px;
-  border: 2px #fff solid;
-}
-.indicator_1 {
-  background-color: #ee3643;
-}
-.indicator_2 {
-  background-color: #fff;
-}
-.slider__indicator-group {
-  margin: 132px 0 0 75px;
+  margin: 125px 0 0 25px;
 }
 /*------SLIDER ARROWS------*/
 .slick-next {
@@ -479,4 +460,17 @@ div.slick-slide {
 }
 .slick-prev:before {
   content: url(../img/icon-left.svg);
+}
+/*------SLIDER DOTS------*/
+.slick-dots {
+  bottom: 27px;
+}
+.slick-dots li.slick-active button:before {
+  color: #ee3643;
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #fff;
+  opacity: 1;
 }
