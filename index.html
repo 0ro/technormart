@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>technomart</title>
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="node_modules/slick-carousel/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- header -->
@@ -105,86 +107,88 @@
       </a>
     </div>
   </div>
-  <!-- end header -->
   <!-- content -->
-  <!-- card 1 -->
-  <div class="content">
-    <div class="offers content__offers container">
-      <div class="card offers__card card_orange card_new">
+  <div class="content container">
+    <div class="offers content__offers clearfix">
+      <!-- card 1 -->
+      <div class="card offers__card card_orange">
+        <div class="card__flag">
+          <div class="flag_action">
+            new
+          </div>
+        </div>
         <div class="card__text">
         Материалы
         </div>
-        <a class="btn btn_uppercase btn_colorful btn_colorful_brown card__btn" href="#">
-        На любой вкус
+        <a class="btn btn_uppercase btn_colorful card__btn" href="#">
+          На любой вкус
         </a>
-        <i class="card__icon">
-        
-        </i>
       </div>
       <!-- card 2 -->
       <div class="card offers__card card_blue">
         <div class="card__text">
           Инструмент
         </div>
-        <a class="btn btn_uppercase btn_colorful btn_colorful_blue card__btn" href="#">
-        На все случаи
+        <a class="btn btn_uppercase btn_colorful card__btn" href="#">
+          На все случаи
         </a>
-        <i class="card__icon">
-        
-        </i>
       </div>
       <!-- card 3 -->
       <div class="card offers__card card_purple">
         <div class="card__text">
           Техника
         </div>
-        <a class="btn btn_uppercase btn_colorful btn_colorful_purple card__btn" href="#">
+        <a class="btn btn_uppercase btn_colorful card__btn" href="#">
           Для стройки
         </a>
-        <i class="card__icon">
-        
-        </i>
+      </div>
+      <!-- slider -->
+      <div class="slider offers__slider">
+        <div class="slide slide_1">
+          <div class="slider__title">
+            Перфораторы
+          </div>
+          <div class="slider__text">
+            Настоящие мужские игрушки
+          </div>
+          <a class="btn btn_red btn_uppercase slider__btn" href="#">
+            Открыть каталог
+          </a>
+        </div>
+        <div class="slide slide_2">
+          <div class="slider__title">
+            Дрели
+          </div>
+          <div class="slider__text">
+            Соседям на радость!
+          </div>
+          <a class="btn btn_red btn_uppercase slider__btn" href="#">
+            Открыть каталог
+          </a>
+        </div>
       </div>
       <!-- card 4 -->
       <div class="card offers__card card_green">
         <div class="card__text">
           Скидки 50%
         </div>
-        <a class="btn btn_uppercase btn_colorful btn_colorful_green card__btn" href="#">
+        <a class="btn btn_uppercase btn_colorful card__btn" href="#">
         На 350 товаров
         </a>
-        <i class="card__icon">
-        
-        </i>
       </div>
       <!-- card 5 -->
       <div class="card offers__card card_yellow">
         <div class="card__text">
           Доставка
         </div>
-        <a class="btn btn_uppercase btn_colorful btn_colorful_yellow card__btn" href="#">
+        <a class="btn btn_uppercase btn_colorful card__btn" href="#">
           Бесплатно
-        </a>
-        <div class="card__icon">
-        
-        </div>
-      </div>
-      <!-- slider -->
-      <div class="slider offers__slider">
-        <div class="slider__img">
-        
-        </div>
-        <div class="slider__title">
-          Перфораторы
-        </div>
-        <div class="slider__text">
-          Настоящие мужские игрушки
-        </div>
-        <a class="btn btn_red slider__btn" href="#">
-          Открыть каталог
         </a>
       </div>
     </div>
   </div>
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
