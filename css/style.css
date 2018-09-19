@@ -85,6 +85,10 @@ a:active {
 }
 .btn_red:active {
   background-color: #ba2732;
+  outline: none;
+}
+.btn_red:focus {
+  outline: none;
 }
 /*------ICONS------*/
 .icon_grey {
@@ -464,6 +468,8 @@ div.slick-slide {
 /*------SLIDER DOTS------*/
 .slick-dots {
   bottom: 27px;
+  left: 221px;
+  width: 35%;
 }
 .slick-dots li.slick-active button:before {
   content: url(../img/slider-indicator.png);
