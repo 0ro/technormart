@@ -380,12 +380,14 @@ a:active {
   background-image: url(../img/icon-5.svg);
 }
 /*------CARD FLAG------*/
-.card__flag {
-  position: absolute;
-  left: 205px;
+.flag {
   overflow: hidden;
   height: 100px;
   width: 100px;
+}
+.card__flag {
+  position: absolute;
+  left: 205px;
 }
 .flag_action {
   background: #ff5357;
@@ -483,4 +485,7 @@ div.slick-slide {
   font-size: 10px;
   color: #fff;
   opacity: 1;
+}
+.goods-card {
+  position: relative;
 }
