@@ -80,8 +80,9 @@ a:active {
 .btn_red {
   color: #fff;
   background-color: #ee3643;
-  padding: 10px 45px;
+  padding: 10px 40px;
   font-size: 15px;
+  border-radius: 3px;
 }
 .btn_red:hover {
   background-color: #ca2c37;
@@ -153,6 +154,9 @@ a:active {
   min-height: 42px;
   height: 100%;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .form-control_search:hover {
   background-color: #212a3a;
@@ -486,6 +490,71 @@ div.slick-slide {
   color: #fff;
   opacity: 1;
 }
+.popular-row {
+  background-color: #f9f6f1;
+  margin-top: 24px;
+}
+.popular-row__text {
+  color: #383f59;
+  font-size: 31px;
+  margin: 23px;
+  float: left;
+}
+.popular-row__btn {
+  float: right;
+  margin-top: 25px;
+  margin-right: 23px;
+}
+.goods__catalog {
+  margin: 17px -12px;
+}
 .goods-card {
   position: relative;
+  width: 218px;
+  height: 336px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+.catalog__goods-card {
+  float: left;
+  margin: 10px 10px 0 10px;
+}
+.goods-card__img {
+  width: 218px;
+  height: 168px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.goods-card__title {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 21px;
+  padding: 0 25px 0 25px;
+  margin: 11px 0;
+}
+.goods-card__oldprice {
+  font-family: 'PT Sans', sans-serif;
+  color: #a9a9a9;
+}
+.btn_arrow {
+  font-family: 'PT Sans', sans-serif;
+  padding-right: 19px;
+}
+.btn_arrow:after {
+  content:'';
+  position: absolute;
+  border: 19px solid #fff;
+  border-left-color: #ee3643;
+  right: 16px;
+  top: 276px;
+}
+.goods-card__btn {
+  margin: 10px;
+}
+.btn__new {
+  margin-top: 32px;
+}
+.goods-card__flag {
+  position: absolute;
+  left: 119px;
+  top: 0px;
 }
