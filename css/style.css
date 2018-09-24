@@ -347,13 +347,13 @@ a:active {
   height: 127px;
   width: 305px;
   background-color: #ffbf47;
-  float: left;
   background-repeat: no-repeat;
   background-position: 205px 34px;
 }
 .offers__card {
   position: relative;
   margin: 5px;
+  float: left;
 }
 .offers__card_buttom {
   margin-top: 17px;
@@ -506,7 +506,7 @@ div.slick-slide {
   margin-right: 23px;
 }
 .goods__catalog {
-  margin: 17px -12px;
+  margin: 17px -2px;
 }
 .goods-card {
   position: relative;
@@ -517,7 +517,8 @@ div.slick-slide {
 }
 .catalog__goods-card {
   float: left;
-  margin: 10px 10px 0 10px;
+  margin: 7px;
+  text-align: center;
 }
 .goods-card__img {
   width: 218px;
@@ -557,4 +558,21 @@ div.slick-slide {
   position: absolute;
   left: 119px;
   top: 0px;
+}
+.brand {
+  border: 1px solid #ebebeb;
+}
+.popular__brand {
+  float: left;
+  margin: 7px;
+  text-align: center;
+}
+.brands__brandslist {
+  margin: 17px -9px;
+}
+.brand__img {
+  height: 144px;
+  width: 221px;
+  display: table-cell;
+  vertical-align: middle;
 }
