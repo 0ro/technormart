@@ -109,7 +109,7 @@ a:active {
   position: absolute;
   border: 19px solid #fff;
   border-left-color: #ee3643;
-  right: 16px;
+  right: 26px;
   top: 276px;
 }
 /*------ICONS------*/
@@ -559,7 +559,7 @@ div.slick-slide {
   color: #a9a9a9;
 }
 .goods-card__btn {
-  margin: 10px;
+  margin: 10px 20px 10px 0;
 }
 .btn__new {
   margin-top: 32px;
