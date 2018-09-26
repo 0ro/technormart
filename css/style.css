@@ -59,9 +59,27 @@ a:active {
   font-size: 17px;
   color: #fff;
 }
+.btn_green:hover {
+  background-color: #5fbb2d;
+  color: #fff;
+}
+.btn_green:active {
+  background-color: #518534;
+  color: #babbbd;
+}
+.btn_green:hover .icon {
+  color: #fff;
+}
 .btn_border {
   border: 2px solid #63a63e;
   color: #32425c;
+}
+.btn_border:hover {
+  border-color: #32425c;
+}
+.btn_border:active {
+  opacity: 0.4;
+  border: 2px solid #32425c;
 }
 .btn_border-rad {
   border-radius: 3px;
@@ -87,7 +105,7 @@ a:active {
 .btn_red {
   color: #fff;
   background-color: #ee3643;
-  padding: 10px 40px;
+  padding: 11px 40px;
   font-size: 15px;
 }
 .btn_red:hover {
@@ -102,15 +120,23 @@ a:active {
 }
 .btn_arrow {
   font-family: 'PT Sans', sans-serif;
-  padding-right: 19px;
+  padding-right: 32px;
+  border-radius: 3px 0 0 3px;
+  line-height: 16px;
 }
 .btn_arrow:after {
-  content:'';
+  content: '';
   position: absolute;
-  border: 19px solid #fff;
+  border: 18px solid #fff;
   border-left-color: #ee3643;
-  right: 26px;
-  top: 276px;
+  right: 21px;
+  top: 277px;
+}
+.btn_arrow:hover::after {
+  border-left-color: #ca2c37;
+}
+.btn_arrow:active::after {
+  border-left-color: #ba2732;
 }
 /*------ICONS------*/
 .icon_grey {
@@ -268,14 +294,6 @@ a:active {
   -webkit-justify-flex: auto;
   -mos-justify-flex: auto;
   -ms-justify-flex: auto;
-}
-.checkout__btn:hover {
-  background-color: #5fbb2d;
-  color: #fff;
-}
-.checkout__btn:active {
-  background-color: #518534;
-  color: #babbbd;
 }
 /*------INFORMATION------*/
 .info {
@@ -537,6 +555,9 @@ div.slick-slide {
   text-align: center;
   border: 1px solid #e5e5e5;
 }
+.goods-card:hover {
+  box-shadow: 0 0 10px #aeb2ba;
+}
 .catalog__goods-card {
   float: left;
   margin: 10px;
@@ -574,14 +595,23 @@ div.slick-slide {
   margin-right: 10px;
 }
 .goods-card-active__btn {
-margin: 5px 0;
+  margin: 5px 0;
 }
 .goods-card-active__btns {
   margin: 38px 0;
 }
+.goods-card-active {
+  display: none;
+}
 /*------BRANDS------*/
 .brand {
   border: 1px solid #ebebeb;
+}
+.brand:hover {
+  box-shadow: 0 10px 25px rgba(41,52,73,.5);
+}
+.brand:active {
+  opacity: 0.4;
 }
 .popular__brand {
   float: left;
