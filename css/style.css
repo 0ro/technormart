@@ -105,7 +105,7 @@ a:active {
 .btn_red {
   color: #fff;
   background-color: #ee3643;
-  padding: 11px 40px;
+  padding: 9px 43px;
   font-size: 15px;
 }
 .btn_red:hover {
@@ -120,17 +120,16 @@ a:active {
 }
 .btn_arrow {
   font-family: 'PT Sans', sans-serif;
-  padding-right: 32px;
+  padding-right: 19px;
   border-radius: 3px 0 0 3px;
-  line-height: 16px;
 }
 .btn_arrow:after {
   content: '';
   position: absolute;
-  border: 18px solid #fff;
+  border: 19px solid #fff;
   border-left-color: #ee3643;
-  right: 21px;
-  top: 277px;
+  left: 115px;
+  top: 0;
 }
 .btn_arrow:hover::after {
   border-left-color: #ca2c37;
@@ -558,6 +557,12 @@ div.slick-slide {
 .goods-card:hover {
   box-shadow: 0 0 10px #aeb2ba;
 }
+.goods-card:hover .goods-card__img {
+  display: none;
+}
+.goods-card:hover .goods-card-active__btns {
+  display: block;
+}
 .catalog__goods-card {
   float: left;
   margin: 10px;
@@ -573,17 +578,20 @@ div.slick-slide {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 21px;
   padding: 0 25px 0 25px;
-  margin: 11px 0;
+  position: absolute;
+  top: 204px;
 }
 .goods-card__oldprice {
   font-family: 'PT Sans', sans-serif;
   color: #a9a9a9;
+  position: absolute;
+  left: 77px;
+  top: 162px;
 }
 .goods-card__btn {
-  margin: 10px 20px 10px 0;
-}
-.btn__new {
-  margin-top: 32px;
+  position: absolute;
+  top: 279px;
+  left: 36px;
 }
 .goods-card__flag {
   position: absolute;
@@ -601,6 +609,9 @@ div.slick-slide {
   margin: 38px 0;
 }
 .goods-card-active {
+  display: none;
+}
+.goods-card-active__btns {
   display: none;
 }
 /*------BRANDS------*/
