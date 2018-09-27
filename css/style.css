@@ -130,12 +130,12 @@ a:active {
 .btn_arrow:after {
   content: '';
   position: absolute;
-  border: 18px solid transparent;
+  border: 19px solid transparent;
   border-left-color: #ee3643;
   height: 0;
   width: 0;
-  top: 1px;
-  right: -36px;
+  top: 0;
+  right: -38px;
 }
 .btn_arrow:hover::after {
   border-left-color: #ca2c37;
