@@ -124,7 +124,7 @@ a:active {
 .btn_arrow {
   font-family: 'PT Sans', sans-serif;
   padding: 10px 22px 10px 36px;
-  line-height: 18px;
+  /* line-height: 18px; */
   border-radius: 3px 0 0 3px;
 }
 .btn_arrow:after {
@@ -592,7 +592,9 @@ div.slick-slide {
 }
 .goods-card__btn {
   position: relative;
-  margin: 17px 21px 0 0;
+  margin: 17px 20px 0 0;
+  width: 60px;
+  height: 18px;
 }
 .goods-card__flag {
   position: absolute;
