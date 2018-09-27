@@ -38,6 +38,9 @@ a:active {
 .strikeout {
   text-decoration: line-through;
 }
+.invisible {
+  opacity: 0;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -129,10 +132,10 @@ a:active {
   position: absolute;
   border: 19px solid transparent;
   border-left-color: #ee3643;
-  top: 0px;
-  right: -37px;
-  width: 0;
-  height: 0;
+  top: 274px;
+  right: 17px;
+  /* width: 0; */
+  /* height: 0; */
 }
 .btn_arrow:hover::after {
   border-left-color: #ca2c37;
@@ -565,7 +568,10 @@ div.slick-slide {
   display: none;
 }
 .goods-card:hover .goods-card-active__btns {
-  display: block;
+  width: 218px;
+  height: 168px;
+  display: table-cell;
+  vertical-align: middle;
 }
 .catalog__goods-card {
   float: left;
@@ -582,20 +588,23 @@ div.slick-slide {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 21px;
   padding: 0 25px 0 25px;
-  position: absolute;
-  top: 204px;
+  /* position: absolute; */
+  /* top: 204px; */
 }
 .goods-card__oldprice {
   font-family: 'PT Sans', sans-serif;
   color: #a9a9a9;
-  position: absolute;
-  left: 77px;
-  top: 162px;
+  margin-top: 15px;
+  /* position: absolute; */
+  /* left: 77px; */
+  /* top: 162px; */
 }
 .goods-card__btn {
-  position: absolute;
-  top: 279px;
-  left: 36px;
+  /* position: absolute; */
+  /* top: 279px; */
+  /* left: 36px; */
+  margin-top: 16px;
+  margin-right: 21px;
 }
 .goods-card__flag {
   position: absolute;
@@ -610,13 +619,8 @@ div.slick-slide {
   margin: 5px 0;
 }
 .goods-card-active__btns {
+  display: none;
   margin: 38px 0;
-}
-.goods-card-active {
-  display: none;
-}
-.goods-card-active__btns {
-  display: none;
 }
 /*------BRANDS------*/
 .brand {
