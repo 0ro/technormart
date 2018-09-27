@@ -124,7 +124,6 @@ a:active {
 .btn_arrow {
   font-family: 'PT Sans', sans-serif;
   padding: 10px 22px 10px 36px;
-  /* line-height: 18px; */
   border-radius: 3px 0 0 3px;
 }
 .btn_arrow:after {
