@@ -123,19 +123,19 @@ a:active {
 }
 .btn_arrow {
   font-family: 'PT Sans', sans-serif;
-  padding-right: 30px;
+  padding: 10px 22px 10px 36px;
   line-height: 18px;
   border-radius: 3px 0 0 3px;
 }
 .btn_arrow:after {
   content: '';
   position: absolute;
-  border: 19px solid transparent;
+  border: 18px solid transparent;
   border-left-color: #ee3643;
-  top: 274px;
-  right: 17px;
-  /* width: 0; */
-  /* height: 0; */
+  height: 0;
+  width: 0;
+  top: 1px;
+  right: -36px;
 }
 .btn_arrow:hover::after {
   border-left-color: #ca2c37;
@@ -532,19 +532,15 @@ div.slick-slide {
 /*------POPULAR ROW------*/
 .popular-row {
   background-color: #f9f6f1;
-  /* margin-top: 24px; */
   padding: 25px;
 }
 .popular-row__text {
   color: #383f59;
   font-size: 31px;
-  /* margin: 23px; */
   float: left;
 }
 .popular-row__btn {
   float: right;
-  /* margin-top: 25px; */
-  /* margin-right: 23px; */
 }
 /*------GOODS------*/
 .popular__goods {
@@ -588,23 +584,15 @@ div.slick-slide {
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 21px;
   padding: 0 25px 0 25px;
-  /* position: absolute; */
-  /* top: 204px; */
 }
 .goods-card__oldprice {
   font-family: 'PT Sans', sans-serif;
   color: #a9a9a9;
   margin-top: 15px;
-  /* position: absolute; */
-  /* left: 77px; */
-  /* top: 162px; */
 }
 .goods-card__btn {
-  /* position: absolute; */
-  /* top: 279px; */
-  /* left: 36px; */
-  margin-top: 16px;
-  margin-right: 21px;
+  position: relative;
+  margin: 17px 21px 0 0;
 }
 .goods-card__flag {
   position: absolute;
