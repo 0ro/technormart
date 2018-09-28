@@ -563,7 +563,7 @@ div.slick-slide {
   display: none;
 }
 .goods-card:hover .goods-card-active__btns {
-  width: 218px;
+  width: 100%;
   height: 168px;
   display: table-cell;
   vertical-align: middle;
