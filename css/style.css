@@ -38,6 +38,9 @@ a:active {
 .strikeout {
   text-decoration: line-through;
 }
+.invisible {
+  opacity: 0;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -52,12 +55,37 @@ a:active {
 /*------BUTTONS------*/
 .btn {
   display: inline-block;
+  padding: 10px 24px;
 }
 .btn_green {
   background-color: #63a63e;
   font-size: 17px;
   color: #fff;
-  padding: 0 26px;
+}
+.btn_green:hover {
+  background-color: #5fbb2d;
+  color: #fff;
+}
+.btn_green:active {
+  background-color: #518534;
+  color: #babbbd;
+}
+.btn_green:hover .icon {
+  color: #fff;
+}
+.btn_border {
+  border: 2px solid #63a63e;
+  color: #32425c;
+}
+.btn_border:hover {
+  border-color: #32425c;
+}
+.btn_border:active {
+  opacity: 0.4;
+  border: 2px solid #32425c;
+}
+.btn_border-rad {
+  border-radius: 3px;
 }
 .btn_white {
   padding: 10px 24px;
@@ -80,7 +108,7 @@ a:active {
 .btn_red {
   color: #fff;
   background-color: #ee3643;
-  padding: 10px 45px;
+  padding: 10px 43px;
   font-size: 15px;
 }
 .btn_red:hover {
@@ -93,12 +121,36 @@ a:active {
 .btn_red:focus {
   outline: none;
 }
+.btn_arrow {
+  font-family: 'PT Sans', sans-serif;
+  padding: 10px 22px 10px 36px;
+  border-radius: 3px 0 0 3px;
+}
+.btn_arrow:after {
+  content: '';
+  position: absolute;
+  border: 19px solid transparent;
+  border-left-color: #ee3643;
+  height: 0;
+  width: 0;
+  top: 0;
+  right: -38px;
+}
+.btn_arrow:hover::after {
+  border-left-color: #ca2c37;
+}
+.btn_arrow:active::after {
+  border-left-color: #ba2732;
+}
 /*------ICONS------*/
 .icon_grey {
   color: #6a7180;
 }
 .icon_light-grey {
   color: #b7bfc8;
+}
+.icon_green {
+  color: #92c178;
 }
 /*------ARROWS------*/
 .arrow {
@@ -153,6 +205,9 @@ a:active {
   min-height: 42px;
   height: 100%;
   flex: auto;
+  -webkit-justify-flex: auto;
+  -mos-justify-flex: auto;
+  -ms-justify-flex: auto;
 }
 .form-control_search:hover {
   background-color: #212a3a;
@@ -238,22 +293,11 @@ a:active {
 }
 /*------CHESKOUT------*/
 .header__checkout {
-  line-height: 43px;
+  line-height: 23px;
   flex: auto;
   -webkit-justify-flex: auto;
   -mos-justify-flex: auto;
   -ms-justify-flex: auto;
-}
-.checkout__btn {
-  height: 100%;
-}
-.checkout__btn:hover {
-  background-color: #5fbb2d;
-  color: #fff;
-}
-.checkout__btn:active {
-  background-color: #518534;
-  color: #babbbd;
 }
 /*------INFORMATION------*/
 .info {
@@ -336,20 +380,20 @@ a:active {
   color: #9b9da2;
 }
 .content__offers {
-  margin: 54px -5px 0 -5px;
+  margin: 54px -5px 24px -5px;
 }
 /*------CARDS------*/
 .card {
   height: 127px;
   width: 305px;
   background-color: #ffbf47;
-  float: left;
   background-repeat: no-repeat;
   background-position: 205px 34px;
 }
 .offers__card {
   position: relative;
   margin: 5px;
+  float: left;
 }
 .offers__card_buttom {
   margin-top: 17px;
@@ -409,11 +453,9 @@ a:active {
 }
 .btn_colorful {
   font-size: 15px;
-  padding: 10px 24px;
   color: #fff;
   background-color: rgba(0,0,0,.1);
   text-align: center;
-  border-radius: 3px;
 }
 .btn_colorful:hover {
   background-color: rgba(0,0,0,.2);
@@ -486,6 +528,110 @@ div.slick-slide {
   color: #fff;
   opacity: 1;
 }
+/*------POPULAR ROW------*/
+.popular-row {
+  background-color: #f9f6f1;
+  padding: 25px;
+}
+.popular-row__text {
+  color: #383f59;
+  font-size: 31px;
+  float: left;
+}
+.popular-row__btn {
+  float: right;
+}
+/*------GOODS------*/
+.popular__goods {
+  text-align: left;
+}
+.goods__catalog {
+  margin: 17px -12px;
+}
+/*------GOODS CARD------*/
 .goods-card {
   position: relative;
+  width: 218px;
+  height: 336px;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+}
+.goods-card:hover {
+  box-shadow: 0 0 10px #aeb2ba;
+}
+.goods-card:hover .goods-card__img {
+  display: none;
+}
+.goods-card:hover .goods-card-active__btns {
+  width: 100%;
+  height: 168px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.catalog__goods-card {
+  float: left;
+  margin: 10px;
+  text-align: center;
+}
+.goods-card__img {
+  width: 218px;
+  height: 168px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.goods-card__title {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 21px;
+  padding: 0 25px 0 25px;
+}
+.goods-card__oldprice {
+  font-family: 'PT Sans', sans-serif;
+  color: #a9a9a9;
+  margin-top: 15px;
+}
+.goods-card__btn {
+  position: relative;
+  margin: 17px 20px 0 0;
+  width: 60px;
+  height: 18px;
+}
+.goods-card__flag {
+  position: absolute;
+  left: 119px;
+  top: 0px;
+}
+/*------GOODS CARD ACTIVE------*/
+.goods-card-active__icon {
+  margin-right: 10px;
+}
+.goods-card-active__btn {
+  margin: 5px 0;
+}
+.goods-card-active__btns {
+  display: none;
+  margin: 38px 0;
+}
+/*------BRANDS------*/
+.brand {
+  border: 1px solid #ebebeb;
+}
+.brand:hover {
+  box-shadow: 0 10px 25px rgba(41,52,73,.5);
+}
+.brand:active {
+  opacity: 0.4;
+}
+.popular__brand {
+  float: left;
+  margin: 8px;
+  text-align: center;
+}
+.brands__brandslist {
+  margin: 24px -11px;
+}
+.brand__img {
+  height: 144px;
+  width: 221px;
+  display: table-cell;
+  vertical-align: middle;
 }
