@@ -635,3 +635,112 @@ div.slick-slide {
   display: table-cell;
   vertical-align: middle;
 }
+/*------SERVICES------*/
+.service {
+  background-color: #f4f8f9;
+}
+.content__service {
+    margin-top: 48px;
+}
+.serv-desсription__title {
+  font-size: 31px;
+  padding-bottom: 21px;
+}
+.serv-desсription__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 2em;
+}
+.service__serv-desсription {
+  padding-top: 62px;
+}
+.radio-btns {
+  float: left;
+  width: 245px;
+}
+/*radio-btns:after {
+  content: "";
+width: 15px;
+    height: 284px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}*/
+[type="radio"] {
+  display: none;
+}
+.services__radio-btns {
+  margin-top: 66px;
+}
+.radio-btns label {
+  display: flex;
+  background-color: #32425c;
+  color: #fff;
+  width: 229px;
+  padding: 16px 0px 16px 17px;
+  font-size: 20px;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  cursor: pointer;
+}
+.radio-btns label:hover ~ {
+  background-color: #293449;
+}
+.radio-btns label:focus {
+  background-color: #fff;
+  color: #32425c;
+}
+#radio-delivery:checked ~ .services__label label[for="radio-delivery"], #radio-garantee:checked ~ .services__label label[for="radio-garantee"], #radio-credit:checked ~ .services__label label[for="radio-credit"] {
+  background-color: #fff;
+  color: #32425c;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+/*#radio-delivery:checked ~ .delivery {
+  display: block;
+}*/
+/*#radio-credit:checked ~ .services__credit {
+  display: block;
+}*/
+.services__content {
+  margin: 63px 0 0 66px;
+  width: 629px;
+  height: 222px;
+  float: left;
+}
+.delivery {
+  background-image: url(../img/car-img.png);
+  background-repeat: no-repeat;
+  background-position: 161px 13px;
+}
+.services__delivery{
+  display: none;
+}
+.services__title {
+  color: #32425c;
+  font-size: 35px;
+  margin-bottom: 23px;
+}
+.services__text {
+  font-size: 14px;
+  width: 378px;
+  line-height: 1.7em;
+  margin: 0;
+}
+.garantee {
+  background-image: url(../img/garantee-img.png);
+  background-repeat: no-repeat;
+  background-position: 241px 13px;
+}
+.services__garantee {
+  display: none;
+}
+.credit {
+  background-image: url(../img/kredit-img.png);
+  background-repeat: no-repeat;
+  background-position: 163px 9px;
+}
+.services__credit {
+  display: none;
+}
+.services__btn {
+  margin-top: 25px;
+}
