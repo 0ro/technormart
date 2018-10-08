@@ -616,7 +616,7 @@ div.slick-slide {
   border: 1px solid #ebebeb;
 }
 .brand:hover {
-  box-shadow: 0 10px 25px rgba(41,52,73,.5);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 .brand:active {
   opacity: 0.4;
@@ -640,7 +640,7 @@ div.slick-slide {
   background-color: #f4f8f9;
 }
 .content__service {
-    margin-top: 48px;
+  margin-top: 48px;
 }
 .serv-desсription__title {
   font-size: 31px;
@@ -654,27 +654,38 @@ div.slick-slide {
 .service__serv-desсription {
   padding-top: 62px;
 }
-.radio-btns {
+.services__radio-btns {
   float: left;
-  width: 245px;
+  margin-top: 66px;
+  position: relative;
 }
-/*radio-btns:after {
+.radio-btns {
+  width: 245px;
+  /*box-shadow: inset 0 0 10px 5px rgba(221, 221, 221, 1);*/
+  /*overflow: hidden;*/
+  /*background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0) 20%);*/
+  /*box-shadow: inset -7px -1px 33px -8px rgba (0,0,0,0,82);
+  -webkit-box-shadow: inset -7px -1px 33px -8px rgba (0,0,0,0,82);
+-moz-box-shadow: inset -7px -1px 33px -8px rgba (0,0,0,0,82);
+box-shadow: inset -7px -1px 33px -8px rgba (0,0,0,0,82);*/
+}
+.radio-btns:after {
   content: "";
-width: 15px;
-    height: 284px;
-  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
-}*/
+  background: url(../img/shadow.png);
+  position: absolute;
+  top: -42px;
+  right: -6px;
+  width: 12px;
+  height: 243px;
+}
 [type="radio"] {
   display: none;
-}
-.services__radio-btns {
-  margin-top: 66px;
 }
 .radio-btns label {
   display: block;
   background-color: #32425c;
   color: #fff;
-  width: 229px;
+  width: 232px;
   padding: 16px 0px 16px 17px;
   font-size: 20px;
   border-top: 1px solid #405069;
