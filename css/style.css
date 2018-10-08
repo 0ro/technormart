@@ -692,7 +692,7 @@ div.slick-slide {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-#radio-delivery:checked ~ .delivery, #radio-garantee:checked ~ .garantee, #radio-credit:checked ~ .credit {
+#radio-delivery:checked ~ .services__content .delivery, #radio-garantee:checked ~ .services__content .garantee, #radio-credit:checked ~ .services__content .credit {
   display: block;
 }
 .services__delivery, .services__garantee, .services__credit {
