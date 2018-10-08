@@ -671,7 +671,7 @@ width: 15px;
   margin-top: 66px;
 }
 .radio-btns label {
-  display: flex;
+  display: block;
   background-color: #32425c;
   color: #fff;
   width: 229px;
@@ -681,25 +681,18 @@ width: 15px;
   border-bottom: 1px solid #293449;
   cursor: pointer;
 }
-.radio-btns label:hover ~ {
+.radio-btns label:hover {
   background-color: #293449;
 }
-.radio-btns label:focus {
-  background-color: #fff;
-  color: #32425c;
-}
-#radio-delivery:checked ~ .services__label label[for="radio-delivery"], #radio-garantee:checked ~ .services__label label[for="radio-garantee"], #radio-credit:checked ~ .services__label label[for="radio-credit"] {
+#radio-delivery:checked ~ .radio-btns label[for="radio-delivery"], #radio-garantee:checked ~ .radio-btns label[for="radio-garantee"], #radio-credit:checked ~ .radio-btns label[for="radio-credit"] {
   background-color: #fff;
   color: #32425c;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
-/*#radio-delivery:checked ~ .delivery {
+#radio-delivery:checked ~ .delivery, #radio-garantee:checked ~ .garantee, #radio-credit:checked ~ .credit {
   display: block;
-}*/
-/*#radio-credit:checked ~ .services__credit {
-  display: block;
-}*/
+}
 .services__content {
   margin: 63px 0 0 66px;
   width: 629px;
@@ -711,7 +704,7 @@ width: 15px;
   background-repeat: no-repeat;
   background-position: 161px 13px;
 }
-.services__delivery{
+.services__delivery, .services__garantee, .services__credit {
   display: none;
 }
 .services__title {
@@ -730,16 +723,10 @@ width: 15px;
   background-repeat: no-repeat;
   background-position: 241px 13px;
 }
-.services__garantee {
-  display: none;
-}
 .credit {
   background-image: url(../img/kredit-img.png);
   background-repeat: no-repeat;
   background-position: 163px 9px;
-}
-.services__credit {
-  display: none;
 }
 .services__btn {
   margin-top: 25px;
