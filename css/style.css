@@ -659,15 +659,15 @@ div.slick-slide {
   font-size: 14px;
   line-height: 26px;
 }
-.services__radio-btns {
+.services__services-nav {
   float: left;
   margin-top: 66px;
   position: relative;
 }
-.radio-btns {
+.services-nav {
   width: 245px;
 }
-.radio-btns:after {
+.services-nav:after {
   content: "";
   background: url(../img/shadow.png);
   position: absolute;
@@ -676,7 +676,7 @@ div.slick-slide {
   width: 12px;
   height: 243px;
 }
-.services-nav {
+.services-nav__item {
   display: block;
   background-color: #32425c;
   color: #fff;
@@ -687,10 +687,10 @@ div.slick-slide {
   border-bottom: 1px solid #293449;
   cursor: pointer;
 }
-.services-nav:hover {
+.services-nav__item:hover {
   background-color: #293449;
 }
-#delivery:checked ~ .radio-btns .serivces-nav_delivery, #garantee:checked ~ .radio-btns .serivces-nav_garantee, #credit:checked ~ .radio-btns .serivces-nav_credit {
+#delivery:checked ~ .services-nav .serivces-nav_delivery, #garantee:checked ~ .services-nav .serivces-nav_garantee, #credit:checked ~ .services-nav .serivces-nav_credit {
   background-color: #fff;
   color: #32425c;
   border-top: 1px solid #fff;
