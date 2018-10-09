@@ -41,6 +41,9 @@ a:active {
 .invisible {
   opacity: 0;
 }
+.hide {
+  display: none;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -558,6 +561,8 @@ div.slick-slide {
 }
 .goods-card:hover {
   box-shadow: 0 0 10px #aeb2ba;
+  -moz-box-shadow: 0 0 10px #aeb2ba;
+  -webkit-box-shadow: 0 0 10px #aeb2ba;
 }
 .goods-card:hover .goods-card__img {
   display: none;
@@ -617,6 +622,8 @@ div.slick-slide {
 }
 .brand:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 .brand:active {
   opacity: 0.4;
@@ -669,10 +676,7 @@ div.slick-slide {
   width: 12px;
   height: 243px;
 }
-[type="radio"] {
-  display: none;
-}
-.radio-btns label {
+.services-nav {
   display: block;
   background-color: #32425c;
   color: #fff;
@@ -683,10 +687,10 @@ div.slick-slide {
   border-bottom: 1px solid #293449;
   cursor: pointer;
 }
-.radio-btns label:hover {
+.services-nav:hover {
   background-color: #293449;
 }
-#radio-delivery:checked ~ .radio-btns label[for="radio-delivery"], #radio-garantee:checked ~ .radio-btns label[for="radio-garantee"], #radio-credit:checked ~ .radio-btns label[for="radio-credit"] {
+#radio-delivery:checked ~ .radio-btns .serivces-nav_delivery, #radio-garantee:checked ~ .radio-btns .serivces-nav_garantee, #radio-credit:checked ~ .radio-btns .serivces-nav_credit {
   background-color: #fff;
   color: #32425c;
   border-top: 1px solid #fff;
@@ -696,7 +700,7 @@ div.slick-slide {
   display: block;
 }
 .services__delivery, .services__garantee, .services__credit {
-  margin: 63px 0 0 66px;
+  padding: 63px 0 0 66px;
   float: left;
 }
 .delivery, .garantee, .credit {
@@ -706,10 +710,7 @@ div.slick-slide {
 .delivery {
   background-image: url(../img/car-img.png);
   background-repeat: no-repeat;
-  background-position: 161px 13px;
-}
-.services__delivery, .services__garantee, .services__credit {
-  display: none;
+  background-position: 227px 67px;
 }
 .services__title {
   color: #32425c;
@@ -725,12 +726,12 @@ div.slick-slide {
 .garantee {
   background-image: url(../img/garantee-img.png);
   background-repeat: no-repeat;
-  background-position: 241px 13px;
+  background-position: 307px 65px;
 }
 .credit {
   background-image: url(../img/kredit-img.png);
   background-repeat: no-repeat;
-  background-position: 163px 9px;
+  background-position: 229px 64px;
 }
 .services__btn {
   margin-top: 25px;

@@ -370,22 +370,20 @@
         </p>
       </div>
       <div class="services clearfix">
-        <input type="radio" name="service-radio" id="radio-delivery" checked>
-        <input type="radio" name="service-radio" id="radio-garantee">
-        <input type="radio" name="service-radio" id="radio-credit">
+        <input type="radio" name="service-radio" class="hide" id="radio-delivery" checked>
+        <input type="radio" name="service-radio" class="hide" id="radio-garantee">
+        <input type="radio" name="service-radio" class="hide" id="radio-credit">
         <div class="radio-btns services__radio-btns">
-          <label for="radio-delivery">  
-             Доставка
+          <label for="radio-delivery" class="services-nav serivces-nav_delivery">  Доставка
           </label>
-          <label for="radio-garantee">  
-            Гарантия
+          <label for="radio-garantee" class="services-nav serivces-nav_garantee">  Гарантия
           </label>
-          <label for="radio-credit">
+          <label for="radio-credit" class="services-nav serivces-nav_credit">
             Кредит
           </label>
         </div> 
         <div class="services__content">
-          <div class="delivery services__delivery">
+          <div class="delivery services__delivery hide">
             <div class="services__title uppercase">
               Доставка
             </div>
@@ -396,7 +394,7 @@
               Ведь мы неплозо заработаем, поднимая его на этаж!
             </p>
           </div>
-          <div class="garantee services__garantee">
+          <div class="garantee services__garantee hide">
             <div class="services__title uppercase">
               Гарантия
             </div>
@@ -407,7 +405,7 @@
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
-          <div class="credit services__credit">
+          <div class="credit services__credit hide">
             <div class="services__title uppercase">
               Кредит
             </div>
