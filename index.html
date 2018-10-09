@@ -355,76 +355,66 @@
         </div>
       </div>
     </div>
-    <div class="service content__service">
+  </div>
+  <div class="service">
+    <div class="content__service container">
       <div class="serv-desсription service__serv-desсription">
         <div class="serv-desсription__title uppercase">
           Сервисы
         </div>
         <p class="serv-desсription__text">
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          Хороший интернет-магазин отличается от плохого не только ценами!
+        </p>
+        <p class="serv-desсription__text">
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
       </div>
-      <div class="services">
-        <div class="radio-btns services__radio-btns">
-          <input type="radio" name="service-radio" id="radio-delivery" checked>
-          <input type="radio" name="service-radio" id="radio-garantee">
-          <input type="radio" name="service-radio" id="radio-credit">
-          <a href="#" class="btn btn_blue radio-btns__btn">
-            <label for="radio-delivery">  
-              Доставка
-            </label>
-          </a>
-          <a href="#" class="btn btn_blue radio-btns__btn">
-            <label for="radio-garantee">  
-              Гарантия
-            </label>
-          </a>
-          <a href="#" class="btn btn_blue radio-btns__btn">
-            <label for="radio-credit">
-              Кредит
-            </label>
-          </a>
+      <div class="services clearfix">
+        <input type="radio" name="service" class="hide" id="delivery" checked>
+        <input type="radio" name="service" class="hide" id="garantee">
+        <input type="radio" name="service" class="hide" id="credit">
+        <div class="services-nav services__services-nav">
+          <label for="delivery" class="services-nav__item serivces-nav_delivery">  Доставка
+          </label>
+          <label for="garantee" class="services-nav__item serivces-nav_garantee">  Гарантия
+          </label>
+          <label for="credit" class="services-nav__item serivces-nav_credit">
+            Кредит
+          </label>
         </div> 
-        <div class="services__content">
-          <div class="delivery services__delivery">
+        <div class="services__content clearfix">
+          <div class="delivery services__delivery hide">
             <div class="services__title uppercase">
               Доставка
             </div>
             <p class="services__text">
-            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплозо заработаем, поднимая его на этаж!
+              Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             </p>
-            <div class="services__img">
-              <img src="" alt="" class="delivery-img">
-            </div>
+            <p class="services__text">
+              Ведь мы неплозо заработаем, поднимая его на этаж!
+            </p>
           </div>
-        </div>
-        <div class="services__content">
-          <div class="garantee services__garantee">
+          <div class="garantee services__garantee hide">
             <div class="services__title uppercase">
-            Гарантии
+              Гарантия
             </div>
             <p class="services__text">
-            Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.
+              Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+            </p> 
+            <p class="services__text">
+              Дом уж восстановите как-нибудь сами.
             </p>
-            <div class="services__img">
-              <img src="" alt="" class="garantee-img">
-            </div>
           </div>
-        </div>
-        <div class="services__content">
-          <div class="credit services__credit">
+          <div class="credit services__credit hide">
             <div class="services__title uppercase">
               Кредит
             </div>
             <p class="services__text">
-            Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+              Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
             </p>
             <a href="#" class="btn btn_red btn_border-rad uppercase services__btn">
               Отправить заявку
             </a>
-            <div class="services__img">
-              <img src="" alt="" class="credit-img">
-            </div>
           </div>
         </div>
       </div>

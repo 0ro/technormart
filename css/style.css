@@ -41,6 +41,9 @@ a:active {
 .invisible {
   opacity: 0;
 }
+.hide {
+  display: none;
+}
 .clearfix:after {
   content: "";
   display: table;
@@ -558,6 +561,8 @@ div.slick-slide {
 }
 .goods-card:hover {
   box-shadow: 0 0 10px #aeb2ba;
+  -moz-box-shadow: 0 0 10px #aeb2ba;
+  -webkit-box-shadow: 0 0 10px #aeb2ba;
 }
 .goods-card:hover .goods-card__img {
   display: none;
@@ -616,7 +621,9 @@ div.slick-slide {
   border: 1px solid #ebebeb;
 }
 .brand:hover {
-  box-shadow: 0 10px 25px rgba(41,52,73,.5);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+  -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25);
 }
 .brand:active {
   opacity: 0.4;
@@ -634,4 +641,98 @@ div.slick-slide {
   width: 221px;
   display: table-cell;
   vertical-align: middle;
+}
+/*------SERVICES------*/
+.service {
+  background-color: #f4f8f9;
+}
+.content__service {
+  margin-top: 48px;
+  padding-top: 62px;
+}
+.serv-desсription__title {
+  font-size: 31px;
+  margin-bottom: 21px;
+}
+.serv-desсription__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+}
+.services__services-nav {
+  float: left;
+  margin-top: 66px;
+  position: relative;
+}
+.services-nav {
+  width: 245px;
+}
+.services-nav:after {
+  content: "";
+  background: url(../img/shadow.png);
+  position: absolute;
+  top: -42px;
+  right: -6px;
+  width: 12px;
+  height: 243px;
+}
+.services-nav__item {
+  display: block;
+  background-color: #32425c;
+  color: #fff;
+  width: 232px;
+  padding: 16px 0px 16px 17px;
+  font-size: 20px;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  cursor: pointer;
+}
+.services-nav__item:hover {
+  background-color: #293449;
+}
+#delivery:checked ~ .services-nav .serivces-nav_delivery, #garantee:checked ~ .services-nav .serivces-nav_garantee, #credit:checked ~ .services-nav .serivces-nav_credit {
+  background-color: #fff;
+  color: #32425c;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+#delivery:checked ~ .services__content .delivery, #garantee:checked ~ .services__content .garantee, #credit:checked ~ .services__content .credit {
+  display: block;
+}
+.services__delivery, .services__garantee, .services__credit {
+  padding: 63px 0 0 66px;
+  float: left;
+}
+.delivery, .garantee, .credit {
+  width: 629px;
+  height: 222px;
+}
+.delivery {
+  background-image: url(../img/car-img.png);
+  background-repeat: no-repeat;
+  background-position: 227px 67px;
+}
+.services__title {
+  color: #32425c;
+  font-size: 35px;
+  margin-bottom: 23px;
+}
+.services__text {
+  font-size: 14px;
+  width: 378px;
+  line-height: 27px;
+  margin: 0;
+}
+.garantee {
+  background-image: url(../img/garantee-img.png);
+  background-repeat: no-repeat;
+  background-position: 307px 65px;
+}
+.credit {
+  background-image: url(../img/kredit-img.png);
+  background-repeat: no-repeat;
+  background-position: 229px 64px;
+}
+.services__btn {
+  margin-top: 25px;
 }
