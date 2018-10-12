@@ -13,80 +13,80 @@
 <body>
   <!-- header -->
   <header class="header">
-    <section class="topbar header__topbar">
+    <div class="topbar header__topbar">
       <div class="container flex topbar__container">
         <!-- logo -->
-        <div class="header__logo">
+        <section class="header__logo">
           <a class="logo logo_active" href="#">
           техномарт
           </a>
-        </div>
+        </section>
         <!-- search -->
-        <div class="search header__search">
+        <section class="search header__search">
           <input type="text" class="form-control form-control_search" placeholder=" Поиск ">
           <i class="fas fa-search icon icon_grey search__icon">
           </i>
-        </div>
+        </section>
         <!-- bookmarks -->
-        <div class="header__bookmarks">
+        <section class="header__bookmarks">
           <a class="bookmarks bookmarks_active" href="#">
             <i class="fas fa-bookmark icon icon_grey bookmarks__icon"></i>
             Закладки: <span>0</span>
           </a>
-        </div>
+        </section>
         <!-- backet -->
-        <div class="header__basket">
+        <section class="header__basket">
           <a class="basket basket_active" href="#">
             <i class="fas fa-shopping-cart icon icon_grey basket__icon"></i>
               Корзина: <span>0</span>
           </a>
-        </div>
+        </section>
         <!-- checkout -->
-        <div class="checkout header__checkout">
+        <section class="checkout header__checkout">
           <a class="btn btn_green checkout__btn" href="#">Оформить заказ</a>
-        </div>
+        </section>
       </div>
-    </section>
+    </div>
     <!-- information -->
-    <section class="info container info__container flex">
+    <div class="info container info__container flex">
       <!-- description -->
-      <div class="description info__description">
+      <section class="description info__description">
         <p class="description__value">
           Интернет-магазин строительных материалов и инструментов для ремонта
         </p>
-      </div>
-      <section class="contacts info__contacts">
+      </section>
+      <div class="contacts info__contacts">
         <!-- phone -->
-        <div class="phone contacts__phone">
+        <section class="phone contacts__phone">
           <i class="fas fa-phone icon icon icon_light-grey phone__icon">
           </i>
           <a class="phone__value" href="#">+7 (812) 555-05-55
           </a>
-        </div>
+        </section>
         <!-- address -->
-        <div class="address contacts__address">
+        <section class="address contacts__address">
           <p class="address__value">
             г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           </p>
-        </div>
-      </section>
-      <section class="entrance info__entrance flex">
+        </section>
+      </div>
+      <div class="entrance info__entrance flex">
         <!-- sign in -->
-        <div class="sign-in entrance__sign-in entrance__item">
+        <section class="sign-in entrance__sign-in entrance__item">
           <a class="btn btn_white sign-in__btn" href="#">
             <i class="fas fa-sign-in-alt icon icon_light-grey sign-in__icon">
             </i>
               Войти
           </a>
-        </div>
+        </section>
         <!-- check-in -->
-        <div class="check-in entrance__check-in entrance__item">
+        <section class="check-in entrance__check-in entrance__item">
           <a class="btn btn_white check-in__btn" href="#">
             Регистрация
           </a>
-        </div>
-      </section>
-    </section>
+        </section>
+      </div>
+    </div>
     <!-- navmenu -->
     <nav class="navmenu container flex">
       <a class="navmenu__item" href="#">
@@ -114,7 +114,7 @@
   </header>
   <!-- content -->
   <main class="content container">
-    <section class="offers content__offers clearfix">
+    <div class="offers content__offers clearfix">
       <!-- card 1 -->
       <section class="card offers__card card_orange">
         <div class="flag card__flag">
@@ -190,10 +190,10 @@
           Бесплатно
         </a>
       </section>
-    </section>
+    </div>
     <!-- popular -->
-    <section class="popular content__popular">
-      <section class="goods popular__goods">
+    <div class="popular content__popular">
+      <div class="goods popular__goods">
         <section class="popular-row clearfix">
           <div class="popular-row__text uppercase">
             Популярные товары:
@@ -202,7 +202,7 @@
             Все популярные товары
           </a>
         </section>
-        <section class="catalog goods__catalog clearfix">
+        <div class="catalog goods__catalog clearfix">
           <!-- goods-card 1 -->
           <section class="goods-card catalog__goods-card">
             <div class="goods-card-active__btns">
@@ -304,18 +304,18 @@
               12500 <span class="uppercase">p.</span>
             </a>
           </section>
-        </section>
-      </section>
-      <section class="brands popular__brands clearfix">
-        <div class="popular-row clearfix">
+        </div>
+      </div>
+      <div class="brands popular__brands clearfix">
+        <section class="popular-row clearfix">
           <div class="popular-row__text uppercase">
             Популярные производители:
           </div>
           <a href="#" class="btn uppercase btn_red btn_border-rad popular-row__btn">
             Все производители
           </a>
-        </div>
-        <div class="brandslist brands__brandslist clearfix">
+        </section>
+        <section class="brandslist brands__brandslist clearfix">
           <a href="#" class="brand popular__brand">
             <div class="brand__img">
               <img src="img/bosh.png" alt="bosh">
@@ -356,13 +356,13 @@
               <img src="img/metabo.png" alt="metabo">
             </div>
           </a>
-        </div>
-      </section>
-    </section>
+        </section>
+      </div>
+    </div>
   </main>
   <main class="service">
-    <section class="content__service container">
-      <div class="serv-desсription service__serv-desсription">
+    <div class="content__service container">
+      <section class="serv-desсription service__serv-desсription">
         <span class="serv-desсription__title uppercase">
           Сервисы
         </span>
@@ -372,12 +372,12 @@
         <p class="serv-desсription__text">
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
-      </div>
-      <section class="services clearfix">
+      </section>
+      <div class="services clearfix">
         <input type="radio" name="service" class="hide" id="delivery" checked>
         <input type="radio" name="service" class="hide" id="garantee">
         <input type="radio" name="service" class="hide" id="credit">
-        <nav class="services-nav services__services-nav">
+        <section class="services-nav services__services-nav">
           <label for="delivery" class="services-nav__item serivces-nav_delivery">  Доставка
           </label>
           <label for="garantee" class="services-nav__item serivces-nav_garantee">  Гарантия
@@ -385,9 +385,9 @@
           <label for="credit" class="services-nav__item serivces-nav_credit">
             Кредит
           </label>
-        </nav> 
-        <section class="services__content clearfix">
-          <div class="delivery services__delivery hide">
+        </section> 
+        <div class="services__content clearfix">
+          <section class="delivery services__delivery hide">
             <div class="services__title uppercase">
               Доставка
             </div>
@@ -397,8 +397,8 @@
             <p class="services__text">
               Ведь мы неплозо заработаем, поднимая его на этаж!
             </p>
-          </div>
-          <div class="garantee services__garantee hide">
+          </section>
+          <section class="garantee services__garantee hide">
             <div class="services__title uppercase">
               Гарантия
             </div>
@@ -408,8 +408,8 @@
             <p class="services__text">
               Дом уж восстановите как-нибудь сами.
             </p>
-          </div>
-          <div class="credit services__credit hide">
+          </section>
+          <section class="credit services__credit hide">
             <div class="services__title uppercase">
               Кредит
             </div>
@@ -419,17 +419,17 @@
             <a href="#" class="btn btn_red btn_border-rad uppercase services__btn">
               Отправить заявку
             </a>
-          </div>
-        </section>
-      </section>
-    </section>
+          </section>
+        </div>
+      </div>
+    </div>
   </main>
   <main class="about">
     <div class="content__about container">
       <div class="about__left">
-        <div class="abuot__title uppercase">
+        <p class="abuot__title uppercase">
           Компания «Техномарт»
-        </div>
+        </p>
         <p class="about__text">
           Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
@@ -437,9 +437,9 @@
           Мы можем доставить наш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="about__list">
-          <li class="about__list_item">Деловые линии</li>
-          <li class="about__list_item">Автотрейдинг</li>
-          <li class="about__list_item">ЖелДорЭкспедиция</li>
+          <li class="about__item">Деловые линии</li>
+          <li class="about__item">Автотрейдинг</li>
+          <li class="about__item">ЖелДорЭкспедиция</li>
         </ul>
         <a href="#" class="btn btn_red btn_border-rad uppercase about__btn">
           Подробнее о компании
