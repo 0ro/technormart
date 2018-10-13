@@ -540,6 +540,7 @@ div.slick-slide {
   color: #383f59;
   font-size: 31px;
   float: left;
+  margin: 0;
 }
 .popular-row__btn {
   float: right;
@@ -653,6 +654,7 @@ div.slick-slide {
 .serv-desсription__title {
   font-size: 31px;
   margin-bottom: 21px;
+  margin: 0;
 }
 .serv-desсription__text {
   margin: 0;
@@ -715,7 +717,8 @@ div.slick-slide {
 .services__title {
   color: #32425c;
   font-size: 35px;
-  margin-bottom: 23px;
+  /* margin-bottom: 23px; */
+  margin: 0 0 23px;
 }
 .services__text {
   font-size: 14px;

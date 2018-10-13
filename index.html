@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- header -->
-  <div class="header">
+  <header class="header">
     <div class="topbar header__topbar">
       <div class="container flex topbar__container">
         <!-- logo -->
@@ -51,7 +51,9 @@
     <div class="info container info__container flex">
       <!-- description -->
       <div class="description info__description">
-        <div class="description__value">Интернет-магазин строительных материалов и инструментов для ремонта</div>
+        <p class="description__value">
+          Интернет-магазин строительных материалов и инструментов для ремонта
+        </p>
       </div>
       <div class="contacts info__contacts">
         <!-- phone -->
@@ -63,7 +65,9 @@
         </div>
         <!-- address -->
         <div class="address contacts__address">
-          <div class="address__value">г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+          <p class="address__value">
+            г.Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </p>
         </div>
       </div>
       <div class="entrance info__entrance flex">
@@ -84,7 +88,7 @@
       </div>
     </div>
     <!-- navmenu -->
-    <div class="navmenu container flex">
+    <nav class="navmenu container flex">
       <a class="navmenu__item" href="#">
         Главная
       </a>
@@ -106,10 +110,10 @@
       <a class="navmenu__item" href="#">
         Контакты
       </a>
-    </div>
-  </div>
+    </nav>
+  </header>
   <!-- content -->
-  <div class="content container">
+  <main class="content container">
     <div class="offers content__offers clearfix">
       <!-- card 1 -->
       <div class="card offers__card card_orange">
@@ -189,11 +193,11 @@
     </div>
     <!-- popular -->
     <div class="popular content__popular">
-      <div class="goods popular__goods">
+      <section class="goods popular__goods">
         <div class="popular-row clearfix">
-          <div class="popular-row__text uppercase">
+          <h2 class="popular-row__text uppercase">
             Популярные товары:
-          </div>
+          </h2>
           <a href="#" class="btn uppercase btn_red btn_border-rad popular-row__btn">
             Все популярные товары
           </a>
@@ -301,12 +305,12 @@
             </a>
           </div>
         </div>
-      </div>
-      <div class="brands popular__brands clearfix">
+      </section>
+      <section class="brands popular__brands clearfix">
         <div class="popular-row clearfix">
-          <div class="popular-row__text uppercase">
+          <h2 class="popular-row__text uppercase">
             Популярные производители:
-          </div>
+          </h2>
           <a href="#" class="btn uppercase btn_red btn_border-rad popular-row__btn">
             Все производители
           </a>
@@ -353,15 +357,15 @@
             </div>
           </a>
         </div>
-      </div>
+      </section>
     </div>
-  </div>
-  <div class="service">
-    <div class="content__service container">
+  </main>
+  <main class="service">
+    <section class="content__service container">
       <div class="serv-desсription service__serv-desсription">
-        <div class="serv-desсription__title uppercase">
+        <h2 class="serv-desсription__title uppercase">
           Сервисы
-        </div>
+        </h2>
         <p class="serv-desсription__text">
           Хороший интернет-магазин отличается от плохого не только ценами!
         </p>
@@ -383,43 +387,91 @@
           </label>
         </div> 
         <div class="services__content clearfix">
-          <div class="delivery services__delivery hide">
-            <div class="services__title uppercase">
+          <section class="delivery services__delivery hide">
+            <h3 class="services__title uppercase">
               Доставка
-            </div>
+            </h3>
             <p class="services__text">
               Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
             </p>
             <p class="services__text">
               Ведь мы неплозо заработаем, поднимая его на этаж!
             </p>
-          </div>
-          <div class="garantee services__garantee hide">
-            <div class="services__title uppercase">
+          </section>
+          <section class="garantee services__garantee hide">
+            <h3 class="services__title uppercase">
               Гарантия
-            </div>
+            </h3>
             <p class="services__text">
               Если купленный у нас товар поломается или заискрит, а так же в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
             </p> 
             <p class="services__text">
               Дом уж восстановите как-нибудь сами.
             </p>
-          </div>
-          <div class="credit services__credit hide">
-            <div class="services__title uppercase">
+          </section>
+          <section class="credit services__credit hide">
+            <h3 class="services__title uppercase">
               Кредит
-            </div>
+            </h3>
             <p class="services__text">
               Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
             </p>
             <a href="#" class="btn btn_red btn_border-rad uppercase services__btn">
               Отправить заявку
             </a>
-          </div>
+          </section>
         </div>
       </div>
+    </section>
+  </main>
+  <main class="about">
+    <div class="content__about container">
+      <section class="about__left">
+        <h2 class="abuot__title uppercase">
+          Компания «Техномарт»
+        </h2>
+        <p class="about__text">
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+        </p>
+        <p class="about__text">
+          Мы можем доставить наш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:
+        </p>
+        <ul class="about__list">
+          <li class="about__item">Деловые линии</li>
+          <li class="about__item">Автотрейдинг</li>
+          <li class="about__item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="btn btn_red btn_border-rad uppercase about__btn">
+          Подробнее о компании
+        </a>
+      </section>
+      <section class="about__right">
+        <h2 class="about__title uppercase">
+          Контакты
+        </h2>
+        <p class="about__text">
+          Вы можете забрать товар сами, заехав в наш офис:
+        </p>
+        <div class="map about__map">
+          <div class="map__img">
+            <img src="img/map.png" alt="Адрес Техномарт" class="img-map">
+          </div>
+        </div>
+        <div class="map-google about__map-google hide">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533238!2d30.320858715804064!3d59.938716481876206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1539450381156" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <a href="#" class="btn btn_red btn_border-rad uppercase about__btn">
+          Заблудились? Напишите нам!
+        </a>
+      </section>
     </div>
-  </div>
+  </main>
+  <section class="popup hide">
+      <span class="popup__close">
+      </span>
+      <div class="popup__content">
+      </div>
+  </section>
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="node_modules/slick-carousel/slick/slick.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
