@@ -740,7 +740,7 @@ div.slick-slide {
   margin-top: 25px;
 }
 .about {
-    
+    position: relative;
 }
     .content__about {
       padding-top: 53px;
@@ -805,7 +805,7 @@ div.slick-slide {
                 
             }
             .about__map {
-                
+              cursor: pointer;
             }
                 .map__img {
                   margin-top: 34px;
@@ -813,21 +813,32 @@ div.slick-slide {
                     .img-map {
                         
                     }
-            .map-google {
-                
+            .map-google.active {
+                display: block;
             }
             .about__map-google {
+                position: absolute;
+                top: 147px;
+                left: 243px;
+                z-index: 100;
                 
             }
             .hide {
                 
             }
 .popup {
-    
+  width: 950px;
+  height: 465px;
+  border: 5px solid red;
 }
     .popup__close {
         
     }
     .popup__content {
-        
+        position: fixed;
+        z-index: 99;
+        width: 950px;
+        height: 465px;
+        border: 5px solid red;
+        background: rgba(0,0,0, .7);
     }
