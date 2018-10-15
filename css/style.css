@@ -813,13 +813,14 @@ div.slick-slide {
                     .img-map {
                         
                     }
-            .map-google.active {
+            .active {
                 display: block;
             }
+
             .about__map-google {
                 position: absolute;
-                top: 147px;
-                left: 243px;
+                /* top: 147px; */
+                /* left: 243px; */
                 z-index: 100;
                 
             }
@@ -827,9 +828,12 @@ div.slick-slide {
                 
             }
 .popup {
-  width: 950px;
-  height: 465px;
-  border: 5px solid red;
+  position: fixed;
+  width: 940px;
+  height: 455px;
+  top: 93px;
+  left: 243px;
+  
 }
     .popup__close {
         
@@ -837,8 +841,9 @@ div.slick-slide {
     .popup__content {
         position: fixed;
         z-index: 99;
-        width: 950px;
-        height: 465px;
-        border: 5px solid red;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
         background: rgba(0,0,0, .7);
     }

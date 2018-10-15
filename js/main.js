@@ -3,7 +3,7 @@ $(document).ready(function() {
   	dots: true,
   });
   $('.map__img').click(function(){
-    $('.map-google').addClass('active');
-  })
+    $('.popup').addClass('active');
+  });
 });
 
