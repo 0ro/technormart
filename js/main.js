@@ -3,7 +3,11 @@ $(document).ready(function() {
   	dots: true,
   });
   $('.map__img').click(function(){
-    $('.popup').addClass('active');
+    $('.popup').fadeIn(500);
+
+    $('.popup__content').click(function(){
+      $('.popup').fadeOut(500);
+    });
   });
 });
 

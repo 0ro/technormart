@@ -813,9 +813,9 @@ div.slick-slide {
                     .img-map {
                         
                     }
-            .active {
+            /* .active {
                 display: block;
-            }
+            } */
 
             .about__map-google {
                 position: absolute;
