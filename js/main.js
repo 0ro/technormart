@@ -8,6 +8,9 @@ $(document).ready(function() {
     $('.popup__content').click(function(){
       $('.popup').fadeOut(500);
     });
+    $('.popup__close').click(function(){
+      $('.popup').fadeOut(500);
+    });
   });
 });
 
