@@ -776,6 +776,9 @@ div.slick-slide {
 .about__btn {
   margin-top: 19px;
 }
+.about-right__btn {
+  padding: 10px 55px;
+}
 .about__right {
   float: right;
 }
