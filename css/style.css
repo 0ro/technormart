@@ -32,6 +32,9 @@ a:active {
 .inline-block {
   display: inline-block;
 }
+.active {
+  display: block;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -833,4 +836,7 @@ div.slick-slide {
   right: 0;
   bottom: 0;
   background: rgba(0,0,0, .7);
+}
+.hidden {
+  overflow: hidden;
 }
