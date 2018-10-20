@@ -3,22 +3,20 @@ $(document).ready(function() {
   	dots: true,
   });
   $('.map__img').click(function(){
-    $('.popup').removeClass('hide');
-
-    $(document.body).css('overflow', 'hidden');
-
-    $('.popup__content').click(function(){
-      $('.popup').addClass('hide');
-
-      $(document.body).css('overflow', 'scroll');
-
-    });
-    $('.popup__close').click(function(){
-      $('.popup').addClass('hide');
-
-      $(document.body).css('overflow', 'scroll');
-      
-    });
+    $('.popup').toggleClass('hide');
+    $(".popup__content").html($(".map-google"));
+    $('.popup-shim').toggleClass('hide')
+    $("body").toggleClass('hidden');
+  });
+  $('.popup-shim').click(function(){
+    $('.popup').toggleClass('hide');
+    $('.popup-shim').toggleClass('hide')
+    $("body").toggleClass('hidden');
+  });
+  $('.popup__close').click(function(){
+    $('.popup').toggleClass('hide');
+    $('.popup-shim').toggleClass('hide')
+    $("body").toggleClass('hidden');
   });
 });
 

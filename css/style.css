@@ -35,6 +35,9 @@ a:active {
 .active {
   display: block;
 }
+.hidden {
+  overflow: hidden;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -46,6 +49,13 @@ a:active {
 }
 .hide {
   display: none;
+}
+.text {
+  font-size: 15px;
+  color: #000;
+}
+.title {
+  font-size: 32px;
 }
 .clearfix:after {
   content: "";
@@ -344,9 +354,8 @@ a:active {
   margin-right: 27px;
 }
 /*------ADDRESS------*/
-.address {
+.address__text {
   color: #32425c;
-  font-size: 14px;
 }
 .contacts__address {
   margin-top: 5px;
@@ -654,14 +663,12 @@ div.slick-slide {
   margin-top: 48px;
   padding-top: 62px;
 }
-.serv-desсription__title {
-  font-size: 31px;
+.serv-description__title {
   margin-bottom: 21px;
   margin: 0;
 }
-.serv-desсription__text {
+.serv-description__text {
   margin: 0;
-  font-size: 14px;
   line-height: 26px;
 }
 .services__services-nav {
@@ -719,11 +726,9 @@ div.slick-slide {
 }
 .services__title {
   color: #32425c;
-  font-size: 35px;
   margin: 0 0 23px;
 }
 .services__text {
-  font-size: 14px;
   width: 378px;
   line-height: 27px;
   margin: 0;
@@ -752,11 +757,7 @@ div.slick-slide {
   float: left;
   width: 580px;
 }
-.abuot__title {
-  font-size: 32px;
-}
 .about__text {
-  font-size: 15px;
   line-height: 26px;
 }
 .about__list {
@@ -792,20 +793,35 @@ div.slick-slide {
   margin-top: 34px;
 }
 .about__map-google {
-  position: absolute;
-  z-index: 100;
-}
-.popup {
   position: fixed;
+  display: flex;
   width: 940px;
   height: 455px;
-  top: 93px;
-  left: 243px;
+  bottom: 0;
+  /* left: 243px; */
+  z-index: 100;
+  display: none;
+}
+iframe.map-google {
+  justify-content: space-between;
+}
+.map__google {
+  
+}
+.popup {
+  /* position: fixed; */
+}
+.popup__content {
+  justify-content: space-between;
 }
 .popup__close {
-  position: absolute;
-  top: 10px;
-  right: 25px;
+  position: fixed;
+  top: 27px;
+  right: 260px;
+  z-index: 101;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 .popup__close:before, .popup__close:after{
   content: "";
@@ -815,6 +831,9 @@ div.slick-slide {
   background: #ee3643;
   z-index: 101;
   cursor: pointer;
+}
+.popup__close:active {
+  outline: none;
 }
 .popup__close:after {
   transform: rotate(45deg);
@@ -828,7 +847,10 @@ div.slick-slide {
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
 }
-.popup__content {
+.popup__content .about__map-google {
+  display: block;
+}
+.popup-shim {
   position: fixed;
   z-index: 99;
   top: 0;
@@ -836,7 +858,4 @@ div.slick-slide {
   right: 0;
   bottom: 0;
   background: rgba(0,0,0, .7);
-}
-.hidden {
-  overflow: hidden;
 }
