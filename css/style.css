@@ -747,9 +747,6 @@ div.slick-slide {
   margin-top: 25px;
 }
 /* ------ABOUT------ */
-.about {
-  position: relative;
-}
 .content__about {
   padding-top: 53px;
 }
@@ -794,34 +791,21 @@ div.slick-slide {
 }
 .about__map-google {
   position: fixed;
-  display: flex;
+  top: 25%;
   width: 940px;
   height: 455px;
-  bottom: 0;
-  /* left: 243px; */
-  z-index: 100;
+  z-index: 101;
   display: none;
-}
-iframe.map-google {
-  justify-content: space-between;
-}
-.map__google {
-  
-}
-.popup {
-  /* position: fixed; */
-}
-.popup__content {
-  justify-content: space-between;
 }
 .popup__close {
   position: fixed;
-  top: 27px;
-  right: 260px;
-  z-index: 101;
+  top: 29%;
+  right: 24%;
+  z-index: 102;
   background: transparent;
   border: 0;
   padding: 0;
+  cursor: pointer;
 }
 .popup__close:before, .popup__close:after{
   content: "";
