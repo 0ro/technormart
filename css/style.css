@@ -744,6 +744,9 @@ div.slick-slide {
   margin-top: 25px;
 }
 /* ------ABOUT------ */
+.about {
+  position: relative;
+}
 .content__about {
   padding-top: 53px;
 }
@@ -786,24 +789,24 @@ div.slick-slide {
 .map__img {
   margin-top: 34px;
 }
-.about__map-google {
-  position: fixed;
-  top: 25%;
+.map-google {
   width: 940px;
   height: 455px;
+}
+.about__map-google {
   z-index: 101;
   display: none;
 }
 .popup {
   position: fixed;
   z-index: 102;
-  width: 940px;
-  height: 455px;
+  top: 25%;
+  left: 21%;
 }
 .popup__close {
-  position: fixed;
-  top: 29%;
-  right: 24%;
+  position: absolute;
+  top: 21px;
+  right: 35px;
   z-index: 102;
   background: transparent;
   border: 0;

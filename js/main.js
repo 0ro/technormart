@@ -5,7 +5,7 @@ $(document).ready(function() {
   function togglePopup() {
     $('.popup').toggleClass('hide');
     $('.popup-shim').toggleClass('hide');
-    // $("body").toggleClass('hidden');
+    $("body").toggleClass('hidden');
   };
   function addContentToPopup(selector) {
     $(".popup__content").html($(selector));
