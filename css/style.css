@@ -10,6 +10,12 @@ a {
 a:active {
   border-style: none;
 }
+a:focus {
+  outline: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
 .header {
   background-color: #f2f6f8;
   padding-bottom: 60px;
@@ -55,7 +61,7 @@ a:active {
   color: #000;
 }
 .title {
-  font-size: 32px;
+  font-size: 33px;
 }
 .clearfix:after {
   content: "";
@@ -78,7 +84,7 @@ a:active {
   font-size: 17px;
   color: #fff;
 }
-.btn_green:hover {
+.btn_green:hover, .btn_green:focus {
   background-color: #5fbb2d;
   color: #fff;
 }
@@ -86,14 +92,14 @@ a:active {
   background-color: #518534;
   color: #babbbd;
 }
-.btn_green:hover .icon {
+.btn_green:hover .icon, .btn_green:focus .icon{
   color: #fff;
 }
 .btn_border {
   border: 2px solid #63a63e;
   color: #32425c;
 }
-.btn_border:hover {
+.btn_border:hover, .btn_border:focus {
   border-color: #32425c;
 }
 .btn_border:active {
@@ -109,10 +115,10 @@ a:active {
   color: #000;
   background-color: #fff;
 }
-.btn_white:hover {
+.btn_white:hover, .btn_white:focus {
   color: #ee3643;
 }
-.btn_white:hover .sign-in__icon {
+.btn_white:hover .sign-in__icon, .btn_white:focus .sign-in__icon {
   color: #32425c;
 }
 .btn_white:active {
@@ -127,14 +133,11 @@ a:active {
   padding: 10px 43px;
   font-size: 15px;
 }
-.btn_red:hover {
+.btn_red:hover, .btn_red:focus {
   background-color: #ca2c37;
 }
 .btn_red:active {
   background-color: #ba2732;
-  outline: none;
-}
-.btn_red:focus {
   outline: none;
 }
 .btn_arrow {
@@ -152,7 +155,7 @@ a:active {
   top: 0;
   right: -38px;
 }
-.btn_arrow:hover::after {
+.btn_arrow:hover::after, .btn_arrow:focus::after {
   border-left-color: #ca2c37;
 }
 .btn_arrow:active::after {
@@ -191,7 +194,7 @@ a:active {
   -moz-justify-flex: auto;
   -ms-justify-flex: auto;
 }
-.logo_active:hover {
+.logo_active:hover, .logo_active:focus {
   background-color: #ca2c37;
 }
 .logo_active:active {
@@ -208,7 +211,7 @@ a:active {
   -ms-justify-flex: auto;
 }
 .form-control {
-  font-family: 'Cuprum', sans-serif; 
+  font-family: 'Cuprum', sans-serif;
   font-size: 18px;
   border: 0;
 }
@@ -257,10 +260,10 @@ a:active {
   display: inline-block;
   height: 100%;
 }
-.bookmarks_active:hover {
+.bookmarks_active:hover, .bookmarks_active:focus, .basket_active:hover, .basket_active:focus {
   background-color: #212a3a;
 }
-.bookmarks_active:hover .fa-bookmark {
+.bookmarks_active:hover .fa-bookmark, .bookmarks_active:focus .fa-bookmark,.basket_active:hover .fa-shopping-cart, .basket_active:focus .fa-shopping-cart {
   color: #fff;
 }
 .bookmarks_active:active {
@@ -288,12 +291,6 @@ a:active {
 .basket_active {
   display: inline-block;
   height: 100%;
-}
-.basket_active:hover {
-  background-color: #212a3a;
-}
-.basket_active:hover .fa-shopping-cart {
-  color: #fff;
 }
 .basket_active:active {
   background-color: #161d29;
@@ -366,7 +363,7 @@ a:active {
 }
 /*------SIGN-IN ICON------*/
 .sign-in__icon {
-  padding-right: 10px; 
+  padding-right: 10px;
 }
 /*------NAVBAR------*/
 .navmenu {
@@ -387,7 +384,7 @@ a:active {
   -ms-justify-flex: auto;
   text-align: center;
 }
-.navmenu__item:hover {
+.navmenu__item:hover, .navmenu__item:focus {
   background-color: #293449;
 }
 .navmenu__item:active {
@@ -472,7 +469,7 @@ a:active {
   background-color: rgba(0,0,0,.1);
   text-align: center;
 }
-.btn_colorful:hover {
+.btn_colorful:hover,.btn_colorful:focus {
   background-color: rgba(0,0,0,.2);
 }
 .btn_colorful:active {
@@ -633,7 +630,7 @@ div.slick-slide {
 .brand {
   border: 1px solid #ebebeb;
 }
-.brand:hover {
+.brand:hover, .brand:focus {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25);
   -moz-box-shadow: 0 14px 28px rgba(0,0,0,0.25);
   -webkit-box-shadow: 0 14px 28px rgba(0,0,0,0.25);
@@ -699,7 +696,7 @@ div.slick-slide {
   border-bottom: 1px solid #293449;
   cursor: pointer;
 }
-.services-nav__item:hover {
+.services-nav__item:hover, .services-nav__item:focus {
   background-color: #293449;
 }
 #delivery:checked ~ .services-nav .serivces-nav_delivery, #garantee:checked ~ .services-nav .serivces-nav_garantee, #credit:checked ~ .services-nav .serivces-nav_credit {
@@ -796,6 +793,12 @@ div.slick-slide {
   height: 455px;
   z-index: 101;
   display: none;
+}
+.popup {
+  position: fixed;
+  z-index: 102;
+  width: 940px;
+  height: 455px;
 }
 .popup__close {
   position: fixed;

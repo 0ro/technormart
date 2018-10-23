@@ -1,22 +1,21 @@
 $(document).ready(function() {
   $('.slider').slick({
-  	dots: true,
+    dots: true,
   });
-  $('.map__img').click(function(){
+  function togglePopup() {
     $('.popup').toggleClass('hide');
-    $(".popup__content").html($(".map-google"));
-    $('.popup-shim').toggleClass('hide')
-    $("body").toggleClass('hidden');
+    $('.popup-shim').toggleClass('hide');
+    // $("body").toggleClass('hidden');
+  };
+  function addContentToPopup(selector) {
+    $(".popup__content").html($(selector));
+  }
+  $('.map__img').click(function(e){
+    e.preventDefault();
+    addContentToPopup(".map-google");
+    togglePopup();
   });
-  $('.popup-shim').click(function(){
-    $('.popup').toggleClass('hide');
-    $('.popup-shim').toggleClass('hide')
-    $("body").toggleClass('hidden');
-  });
-  $('.popup__close').click(function(){
-    $('.popup').toggleClass('hide');
-    $('.popup-shim').toggleClass('hide')
-    $("body").toggleClass('hidden');
-  });
+  $('.popup-shim').click(togglePopup);
+  $('.popup__close').click(togglePopup);
 });
 
