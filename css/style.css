@@ -783,9 +783,6 @@ div.slick-slide {
 .about__right {
   float: right;
 }
-.about__map {
-  cursor: pointer;
-}
 .map__img {
   margin-top: 34px;
 }
