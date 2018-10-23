@@ -798,7 +798,8 @@ div.slick-slide {
   position: fixed;
   z-index: 102;
   top: 25%;
-  left: 21%;
+  left: 50%;
+  margin-left: -470px;
 }
 .popup__close {
   position: absolute;
