@@ -797,8 +797,13 @@ div.slick-slide {
 .popup {
   position: fixed;
   z-index: 102;
+  width: 500px;
   top: 25%;
   left: 50%;
+  margin-left: -250px;
+}
+.popup_map {
+  width: 940px;
   margin-left: -470px;
 }
 .popup__close {
