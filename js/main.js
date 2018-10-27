@@ -8,7 +8,7 @@ $(document).ready(function() {
     $("body").toggleClass("hidden");
   };
   function addContentToPopup(selector) {
-    $(".popup__content").html($(selector));
+    $(".popup__content").not("map-google").html($(selector));
   }
   $(".map__img").click(function(e){
     e.preventDefault();
