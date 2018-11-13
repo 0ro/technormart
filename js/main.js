@@ -15,7 +15,6 @@ $(document).ready(function() {
     addContentToPopup(".map-google");
     togglePopup();
   });
-  $(".popup-shim").click(togglePopup);
-  $(".popup__close").click(togglePopup);
+  $(".popup-shim, .popup__close").click(togglePopup);
 });
 
